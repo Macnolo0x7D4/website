@@ -68,6 +68,9 @@
         </header>
         <!-- Test -->
         <div class="container container-main">
+                <div class="alert alert-warning" role="alert">
+                    WIP - Trabajo en Progreso. Posibles errores!!
+                </div>
             <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas odio mi, convallis sed quam at, ultrices aliquam ligula. Phasellus fermentum est sit amet leo aliquet volutpat ut eget ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed lacus nulla, eleifend vitae lacus vel, rhoncus egestas mi. Morbi quam risus, commodo sit amet volutpat eu, consectetur eu sem. Sed venenatis consectetur convallis.
 
@@ -114,5 +117,11 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script>
+            window.onload = () => {
+                let el = document.querySelector('[alt="www.000webhost.com"]').parentNode.parentNode;
+                el.parentNode.removeChild(el);
+            }
+        </script>
     </body>
 </html>
