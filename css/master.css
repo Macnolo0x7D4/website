@@ -29,3 +29,7 @@ header {
   .container-footer{
       background-color: #f8f9fa;
   }
+
+  body{
+      background-color: #fff;
+  }
