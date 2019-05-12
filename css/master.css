@@ -28,6 +28,9 @@ header {
 
   .container-footer{
       background-color: #f8f9fa;
+      margin-top: 20px;
+      padding-top: 20px;
+      padding-bottom: 15px;;
   }
 
   body{

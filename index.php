@@ -91,22 +91,20 @@
                 </div>
             </nav>
         </header>
-        <!-- Test -->
+        <!-- Content -->
         <div class="container container-main">
-                <div class="alert alert-warning" role="alert">
-                    WIP - Trabajo en Progreso. Posibles errores!!
-                </div>
-            <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas odio mi, convallis sed quam at, ultrices aliquam ligula. Phasellus fermentum est sit amet leo aliquet volutpat ut eget ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed lacus nulla, eleifend vitae lacus vel, rhoncus egestas mi. Morbi quam risus, commodo sit amet volutpat eu, consectetur eu sem. Sed venenatis consectetur convallis.
-
-                    Duis auctor, sem et tempor ultrices, magna odio finibus enim, vel vestibulum arcu massa quis diam. Pellentesque a dui nec ipsum lacinia tristique eget id lacus. Cras mattis orci ac ante fermentum, quis auctor erat venenatis. In non ante eu risus iaculis accumsan id a orci. Aliquam egestas eu elit feugiat fermentum. Maecenas semper, est vel commodo convallis, nisl felis interdum justo, nec finibus risus arcu condimentum risus. Donec consequat pharetra porttitor. Pellentesque iaculis neque nec suscipit hendrerit. Maecenas elementum, neque eget facilisis iaculis, lacus felis volutpat dui, nec accumsan odio orci non risus. Praesent vel ligula sed augue ultricies molestie.
-                    
-                    Sed dolor orci, maximus non pharetra eu, efficitur a nisi. Sed eros ligula, volutpat eget est a, lacinia hendrerit tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer rhoncus porttitor augue vel porta. Donec purus leo, vehicula ut justo ut, facilisis condimentum diam. Sed laoreet nunc sed convallis varius. Pellentesque hendrerit eu dui quis rhoncus. In eget pharetra tortor.
-                    
-                    Mauris convallis vulputate ligula, sit amet pellentesque nibh lobortis fringilla. Praesent diam velit, dignissim quis leo at, accumsan mattis lectus. Nulla malesuada pellentesque purus. Donec pulvinar fringilla lectus, pellentesque mattis eros vestibulum eget. Integer a elit leo. Morbi eget dolor ultrices, fermentum orci a, ultricies urna. Morbi efficitur felis et ante accumsan cursus. Quisque pharetra varius ligula, sit amet scelerisque justo elementum id.
-                    
-                    Praesent vestibulum rhoncus libero id commodo. Curabitur sit amet auctor massa, non gravida tellus. Ut tempor sem dui, at blandit ligula ullamcorper in. Vestibulum sagittis justo sem, eget molestie augue molestie ac. Donec aliquet et velit sit amet facilisis. Nam auctor tempor viverra. Donec in dolor id tortor tincidunt hendrerit. Vivamus auctor vestibulum bibendum. Sed et mollis felis.
-            </p>
+            <div class="alert alert-warning" role="alert">
+                WIP - Trabajo en Progreso. Posibles errores!!
+            </div>
+            <div class="text-justify">
+                <div class="card">
+            <h5 class="card-header">Nuevo</h5>
+            <div class="card-body">
+                <h5 class="card-title">Iniciando contenido...</h5>
+                <p class="card-text">Hola usuario! Esto es Macnolo Tech. Es todavia un pagina en proceso!</p>
+            </div>
+            </div>
+            </div>
         </div>
         <!-- iOS Repo Modal -->
         <div class="modal fade" id="RepoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
