@@ -118,12 +118,20 @@
                 </div>
                 <div class="modal-body">
                     <div class="buttons-group">
-                        <a href="sileo://source/https://macnolo.tk/repo" class="btn btn-outline-info" role="button">
-                            Agrega a Sileo
-                        </a>
-                        <a href="cydia://url/https://cydia.saurik.com/api/share#?source=https%3A%2F%2Fmacnolo.tk/repo" class="btn btn-outline-dark" role="button">
-                            Agrega a Cydia
-                        </a>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-4">
+                                <a href="sileo://source/https://macnolo.tk/repo" class="btn btn-outline-info" role="button">
+                                    Agrega a Sileo
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="cydia://url/https://cydia.saurik.com/api/share#?source=https%3A%2F%2Fmacnolo.tk/repo" class="btn btn-outline-dark" role="button">
+                                    Agrega a Cydia
+                                </a>
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
                     </div>
                     O agrega este link: <a href="#">https://macnolo.tk/repo</a>
                 </div>
