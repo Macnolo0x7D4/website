@@ -23,7 +23,7 @@ header {
   }
 
   .container-main{
-      padding-top: 60px;
+      padding-top: 80px;
   }
 
   .container-footer{
@@ -39,3 +39,13 @@ header {
   
   .card{
 	  margin-bottom:20px;
+	  -webkit-box-shadow: 10px 10px 8px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 8px -12px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 8px -12px rgba(0,0,0,0.75);
+  }
+  
+  nav{
+	  -webkit-box-shadow: 2px 12px 22px -20px rgba(0,0,0,0.75);
+	  -moz-box-shadow: 2px 12px 22px -20px rgba(0,0,0,0.75);
+	  box-shadow: 2px 12px 22px -20px rgba(0,0,0,0.75);
+  }
