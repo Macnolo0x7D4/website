@@ -1,15 +1,3 @@
-<?php
-    $DEST = "admin@macnolo.tk";
-    $NAME = $_POST["user"];
-    $EMAIL = $_POST["email"];
-    $DESCR = $_POST["description"];
-
-    $CONT = "User: " . $NAME . "\nEmail: " . $EMAIL . "\nDescription: " . $DESCR;
-
-    mail($DEST, "Support", $CONT);
-    header("Location: success.html");
-?>
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -49,7 +37,7 @@
     <link href="../css/floating-labels.css" rel="stylesheet">
   </head>
   <body>
-    <form action="" method="post" class="form-signin">
+    <form action="./send.php" method="post" class="form-signin">
     <div class="text-center mb-4">
         <img class="mb-4" src="../img/logo.png" alt="" width="72" height="72">
         <h1 class="h3 mb-3 font-weight-normal">Contacto</h1>
@@ -67,7 +55,7 @@
     <div class="form-label-group">
         <textarea id="inputDescription" name="description" class="form-control" maxlength=105 placeholder="Describe tu problema."></textarea>
     </div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit" id="submitButton">Iniciar Sesión</button>
+    <button class="btn btn-lg btn-primary btn-block" type="submit" id="submitButton">Enviar</button>
     <p class="mt-5 mb-3 text-muted text-center">&copy; 2019</p>
     </form>
 </body>
