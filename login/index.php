@@ -41,29 +41,35 @@
   </head>
   <body>
     <form class="form-signin">
-  <div class="text-center mb-4">
-    <img class="mb-4" src="../img/logo.png" alt="" width="72" height="72">
-    <h1 class="h3 mb-3 font-weight-normal">Iniciar Sesión</h1>
-    <p>Ingresa tus datos para poder seguir.</p>
-  </div>
+      <div class="text-center mb-4">
+        <img class="mb-4" src="../img/logo.png" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Iniciar Sesión</h1>
+        <p>Ingresa tus datos para poder seguir.</p>
+      </div>
 
-  <div class="form-label-group">
-    <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
-    <label for="inputEmail">Email</label>
-  </div>
+      <div class="form-label-group">
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+        <label for="inputEmail">Email</label>
+      </div>
 
-  <div class="form-label-group">
-    <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
-    <label for="inputPassword">Contraseña</label>
-  </div>
+      <div class="form-label-group">
+        <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+        <label for="inputPassword">Contraseña</label>
+      </div>
 
-  <div class="checkbox mb-3">
-    <label>
-      <input type="checkbox" value="remember-me"> Recuerdame
-    </label>
-  </div>
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar Sesión</button>
-  <p class="mt-5 mb-3 text-muted text-center">&copy; 2019</p>
-</form>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Recuerdame
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar Sesión</button>
+      <p class="mt-5 mb-3 text-muted text-center">&copy; 2019</p>
+    </form>
+    <script>
+        window.onload = () => {
+            let el = document.querySelector('[alt="www.000webhost.com"]').parentNode.parentNode;
+            el.parentNode.removeChild(el);
+        }
+    </script>  
 </body>
 </html>
