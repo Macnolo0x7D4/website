@@ -59,12 +59,10 @@
     <p class="mt-5 mb-3 text-muted text-center">&copy; 2019</p>
     </form>
     <script>
-        <script>
-            window.onload = () => {
-                let el = document.querySelector('[alt="www.000webhost.com"]').parentNode.parentNode;
-                el.parentNode.removeChild(el);
-            }
-        </script>  
-    </script>
+		window.onload = () => {
+			let el = document.querySelector('[alt="www.000webhost.com"]').parentNode.parentNode;
+			el.parentNode.removeChild(el);
+		}
+	</script> 
 </body>
 </html>
