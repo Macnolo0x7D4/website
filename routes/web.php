@@ -31,3 +31,13 @@ Route::post('/support', 'SupportController@store');
 Route::get('/404', function(){
     return view('404');
 });
+
+/*
+|
+|	Other sites URI
+|
+*/
+
+Route::get('/autolocker', function(){
+	return view('autolocker');
+});
