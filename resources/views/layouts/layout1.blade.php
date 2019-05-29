@@ -75,7 +75,7 @@
                         <a href="#" class="nav-link disabled" tabindex="-1" aria-disabled="true">MacHack-3DS</a>
                     </li>
                     <li class="nav-item">
-                        <a href="https://autolocker.macnolo.tk" class="nav-link">AutoLocker</a>
+                        <a href="https://macnolo.tk/autolocker" class="nav-link">AutoLocker</a>
                     </li>
 					<li class="nav-item">
 						<a href="#" class="nav-link disabled" tabindex="-1" aria-disabled="true">Macssenger</a>
@@ -86,8 +86,8 @@
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Ingresa tu búsqueda" aria-label="Ingresa tu busqueda">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
                     </form>
+                    
                 </div>
             </nav>
         </header>

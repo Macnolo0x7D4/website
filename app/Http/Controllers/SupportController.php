@@ -12,6 +12,10 @@ class SupportController extends Controller
 
     public $msg;
 
+    public function __construct(){
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         return view('support'); 

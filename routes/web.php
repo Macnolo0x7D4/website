@@ -44,3 +44,4 @@ Route::get('/autolocker', function(){
 Auth::routes();
 
 Route::get('/dashboard', 'SiteController@dashboard')->name('dashboard');
+
