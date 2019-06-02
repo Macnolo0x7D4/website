@@ -1,5 +1,6 @@
 @extends('layouts.layout3')
 @section('main_form')
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <form action="{{ route('support') }}" method="POST" class="form-signin">
     @csrf
     <div class="text-center mb-4">
@@ -19,6 +20,7 @@
     <div class="form-label-group">
         <textarea id="inputDescription" name="content" class="form-control" maxlength=105 placeholder="Describe tu problema."></textarea>
     </div>
+	<div class="g-recaptcha" data-sitekey="6LfYaKYUAAAAABA9Dtb6FFNZj6W2uFg0Ja0vj8rF"></div>
     <button class="btn btn-lg btn-primary btn-block" type="submit" id="submitButton">Enviar</button>
     <p class="mt-5 mb-3 text-muted text-center">&copy; 2019</p>
 </form>
