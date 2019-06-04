@@ -44,4 +44,7 @@ Route::get('/autolocker', function(){
 Auth::routes();
 
 Route::get('/dashboard', 'SiteController@dashboard')->name('dashboard');
+Route::get('/volcano', function(){
+	return view('volcano');
+});
 
