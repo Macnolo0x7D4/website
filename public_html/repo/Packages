@@ -1,0 +1,53 @@
+Package: info.rpdev.dateinstatusbar
+Version: 0.9.1-2
+Architecture: iphoneos-arm
+Maintainer: Redpandadev
+Installed-Size: 136
+Depends: mobilesubstrate, firmware(>=8.0)
+Filename: debs/DateInStatusbar_0.9.1-2.deb
+Size: 4896
+MD5sum: b4db63e19d2effe6e130e5e6bd92f8df
+SHA1: e9e1989447b1b33c5d54be005f634fca90b10189
+SHA256: 31140158828d7551c6b7299aef6c23f372dc27cab6284f8b0de568428b4b0120
+Section: Tweaks
+Description: Adds current date to statusbar
+Author: Redpandadev
+Depiction: http://repo.rpdev.info/cydia/dateinstatusbar.html
+Name: Date In Statusbar
+
+Package: it.dreamcode.picobanners2
+Version: 0.0.1b1
+Architecture: iphoneos-arm
+Maintainer: Michele Primavera <support@dreamcode.it>
+Installed-Size: 108
+Depends: mobilesubstrate
+Filename: debs/PicoBanners2_0.0.1b1.deb
+Size: 19374
+MD5sum: f4237b4284257dd073c57d6720c4ed5a
+SHA1: 0266e489881d4114a15d742dd57afbb860be8989
+SHA256: 111bd5fbbe15671776aba81a9852c10772a75d4feb4def425bc3270a2ef80d24
+Section: Tweaks
+Description: Smaller iOS 11 banners
+Author: Michele Primavera <support@dreamcode.it>
+Name: PicoBanners 2
+
+Package: com.rpetrich.cask
+Version: 0.2
+Architecture: iphoneos-arm
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Installed-Size: 140
+Depends: firmware (>= 8.0), mobilesubstrate (>= 0.9.5000), preferenceloader
+Filename: debs/Cask_0.2.deb
+Size: 11048
+MD5sum: e6ea2aae7512971fd3ebf6e254d56126
+SHA1: 5f3b0ad9c3dce188be3d4dc3b1be81739547136f
+SHA256: 63e6b4e9644f598c788c10164a37e235a4c697988d33ef75a819bf56ce3ff3a4
+Section: Tweaks
+Homepage: http://rpetri.ch/cydia/cask/
+Description: Animated table scrolling inspired by Google Plus
+Tag: purpose::extension
+Author: Ryan Petrich <rpetrich@gmail.com>
+Depiction: http://rpetri.ch/cydia/cask/
+Dev: rpetrich
+Name: Cask
+Sponsor: thebigboss.org <http://thebigboss.org>
