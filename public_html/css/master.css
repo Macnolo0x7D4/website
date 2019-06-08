@@ -32,17 +32,8 @@ header {
   
   .card{
 	  margin-bottom:20px;
-	  -webkit-box-shadow: 10px 10px 8px -12px rgba(0,0,0,0.75);
-	 -moz-box-shadow: 10px 10px 8px -12px rgba(0,0,0,0.75);
-	 box-shadow: 10px 10px 8px -12px rgba(0,0,0,0.75);
   }
-  
-  nav{
-	  -webkit-box-shadow: 2px 12px 22px -20px rgba(0,0,0,0.75);
-	  -moz-box-shadow: 2px 12px 22px -20px rgba(0,0,0,0.75);
-	  box-shadow: 2px 12px 22px -20px rgba(0,0,0,0.75);
-  }
-  
+
   footer{
 	  -webkit-box-shadow: 2px -12px 22px -20px rgba(0,0,0,0.75);
 	 -moz-box-shadow: 2px -12px 22px -20px rgba(0,0,0,0.75);
@@ -50,4 +41,15 @@ header {
       background-color: #f8f9fa;
       padding: 0;
       margin: 0;
+  }
+  .search{
+    border: 0;
+    border-bottom: 1px solid gray;
+    background-color: #f8f9fa;
+  }
+  svg{
+      color: gray;
+  }
+  svg:hover{
+      color: #5e5e5e;
   }

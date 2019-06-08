@@ -8,6 +8,8 @@
     <!-- Bootstrap and master css -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/master.css">
+    <!--<link rel="stylesheet" href="/css/all.css">-->
+    <script src="/js/all.js"></script>
 
     <!-- Branding -->
     <title>@yield('title') | Macnolo Tech</title>
@@ -39,7 +41,7 @@
         <header>
             @yield('navbar')
             <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow">
                 <a class="navbar-brand" href="/home">
                     <img src="/img/logo.png" width=30px class="d-inline-block align-top" alt="logo">
                     Macnolo Tech
@@ -75,7 +77,10 @@
                         <a href="#" class="nav-link disabled" tabindex="-1" aria-disabled="true">MacHack-3DS</a>
                     </li>
                     <li class="nav-item">
-                        <a href="https://macnolo.tk/autolocker" class="nav-link">AutoLocker</a>
+                        <a href="/autolocker" class="nav-link">AutoLocker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/volcano" class="nav-link">Volcano</a>
                     </li>
 					<li class="nav-item">
 						<a href="#" class="nav-link disabled" tabindex="-1" aria-disabled="true">Macssenger</a>
@@ -85,9 +90,11 @@
                     </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Ingresa tu búsqueda" aria-label="Ingresa tu busqueda">
+                        <input class="form-control mr-sm-2 search" type="search" placeholder="Ingresa tu búsqueda" aria-label="Ingresa tu busqueda">
                     </form>
-                    
+                    <a href="" class="nav-item nav-link">
+                        <i class="fas fa-user-circle fa-2x"></i>
+                    </a>
                 </div>
             </nav>
         </header>
