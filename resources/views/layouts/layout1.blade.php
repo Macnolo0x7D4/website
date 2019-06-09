@@ -8,7 +8,6 @@
     <!-- Bootstrap and master css -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/master.css">
-    <!--<link rel="stylesheet" href="/css/all.css">-->
     <script src="/js/all.js"></script>
 
     <!-- Branding -->
