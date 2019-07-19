@@ -70,10 +70,10 @@
                     </li>
                     -->
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Macnolo Launcher</a>
+                        <a class="nav-link" href="/macnolo-launcher">Macnolo Launcher</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link disabled" tabindex="-1" aria-disabled="true">MacHack-3DS</a>
+                        <a href="/3ds" class="nav-link">MacHack-3DS</a>
                     </li>
                     <li class="nav-item">
                         <a href="/autolocker" class="nav-link">AutoLocker</a>
