@@ -1,216 +1,211 @@
-{{define "application/index"}}
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Macnolo Tech</title>
-    <meta name="description" content="A personal site about technology, new developments and programs, and hacks.">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/logo/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/logo/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="196x196" href="/assets/img/logo/favicon-196x196.png">
-    <link rel="icon" type="image/png" sizes="196x196" href="/assets/img/logo/favicon-196x196.png">
-    <link rel="icon" type="image/png" sizes="200x200" href="/assets/img/logo/logo.png">
-    <link rel="stylesheet" type="text/css" href="/assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400">
-    <link rel="stylesheet" type="text/css" href="/assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/assets/fonts/simple-line-icons.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/styles.min.css">
-</head>
-
-<body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-        <div class="container"><a class="navbar-brand logo" href="#"><img src="/assets/img/logo/logo.png" width="40" style="margin: 5px;margin-bottom: 7px;margin-right: 7px;">Macnolo Tech</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div
-                class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="features.html">Features</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html">About Us</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
-                </ul>
-        </div>
-        </div>
-    </nav>
-    <main class="page landing-page">
-        <section class="pt-4 pt-md-11" style="color: rgb(255,255,255);min-height: 400px;">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="50" class="col-12 col-md-5 col-lg-6 order-md-2"><img class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" src="assets/img/tech/jumbotron.png"></div>
-                    <div data-aos="slide-up" data-aos-duration="800" data-aos-delay="100" class="text col-12 col-md-7 col-lg-6 order-md-1">
-                        <h2 style="color: rgba(0,0,0,0.88);font-size: 48px;font-family: Montserrat;line-height: 1.15;">Welcome to&nbsp;<br></h2>
-                        <h1 style="color: rgba(0,0,0,0.88);font-size: 48px;font-family: Montserrat;line-height: 1.15;"><span style="color: #335EEA;">Macnolo Tech</span><br></h1>
-                        <p></p>
-                        <h6 style="color: rgb(154,154,154);">Create everything you think possible.<br></h6>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="clean-block clean-info dark">
-            <div class="container">
-                <div class="block-heading">
-                    <h2 class="text-info">Recent Projects</h2>
-                    <p>In this zone, you will find all the latest projects of Macnolo Tech.</p>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-md-6" data-aos="fade-right" data-aos-duration="800" data-aos-once="true"><img class="img-thumbnail image-zoom" src="assets/img/tech/switch.jpg"></div>
-                    <div class="col-md-6" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
-                        <h3>Switch Lan Play ++</h3>
-                        <div class="getting-started-info">
-                            <p class="text-justify">The revolucionary technology that allows the connection of several Nintendo Switch consoles to play with other people even if they are banned! This technology uses our servers to work.</p>
-                        </div>
-                        <div class="alert alert-warning" role="alert"><span><strong>Status:&nbsp;</strong>InDev</span></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="clean-block clean-info dark" style="background-color: #fff;">
-            <div class="container" style="margin-top: 120px;">
-                <div class="row align-items-center" style="background-color: #fff;">
-                    <div class="col-md-6" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
-                        <h3>LiteDS</h3>
-                        <div class="getting-started-info">
-                            <p class="text-justify">An open-source and cross-platform driver station for FIRST Robotics Competition from WinT 3794. Using this app, you can control and manage your robots, as the original driver station, but you can use your smartphone if you
-                                like. All the processes are managed by an open-source engine written in JAVA, New-LibDS. This app has released for Android only, but it will be for iOS, Windows, Mac, and Linux. </p>
-                            <div data-aos="fade" data-aos-delay="100"
-                                data-aos-once="true" class="btn-group" role="group"><a class="btn btn-dark" href="https://github.com/mcn2004/LiteDS" role="button" target="_blank">View on GitHub&nbsp;<span class="fab fa-github" style="font-size: 1.2em;display: inline-block;padding: auto;"></span></a><a class="btn btn-primary"
-                                    href="#">See Website&nbsp;<span class="far fa-file-alt"></span></a><a class="btn btn-success" href="https://play.google.com/store/apps/details?id=me.macnolo.liteds" target="_blank">Get in on Google Play&nbsp;<span class="fa fa-android btn-icon-prepend"></span></a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6" data-aos="fade-left" data-aos-duration="800" data-aos-once="true"><img class="img-thumbnail image-zoom" src="assets/img/tech/liteds-main.png" width="250px"><img class="img-thumbnail image-zoom" src="assets/img/tech/liteds-menu.png" width="250px"></div>
-                </div>
-            </div>
-        </section>
-        <section class="clean-block features">
-            <div class="container scrollflow" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
-                <div class="block-heading">
-                    <h2 class="text-info">LibTMOA</h2>
-                    <p>A simple, but powerful library for Mecanum movement.</p>
-                </div>
-                <div class="row justify-content-center">
-                    <div data-bs-hover-animate="pulse" class="col-md-5 feature-box"><i class="icon-star icon"></i>
-                        <h4>For FTC in Java</h4>
-                        <p class="text-justify">This library is made for the programming in your FTC robot chassis. You can control your chassis with only call one function in JAVA.</p>
-                    </div>
-                    <div data-bs-hover-animate="pulse" class="col-md-5 feature-box"><i class="icon-pencil icon"></i>
-                        <h4>Open Source</h4>
-                        <p class="text-justify">If you want to modify any data of our library, you can! This library is under GNU GPL v3 license.</p>
-                    </div>
-                    <div data-bs-hover-animate="pulse" class="col-md-5 feature-box"><i class="icon-screen-smartphone icon"></i>
-                        <h4>Simple, but powerful</h4>
-                        <p class="text-justify"><br>The library is made to reduce your FTC robot program in the simplest way when you program.<br><br></p>
-                    </div>
-                    <div data-bs-hover-animate="pulse" class="col-md-5 feature-box"><i class="icon-refresh icon"></i>
-                        <h4>Great Support</h4>
-                        <p class="text-justify">It is being updated day after day. However, if you have any issue, you can leave it in our suggestion zone.</p>
-                    </div>
-                    <div data-aos="fade" data-aos-delay="100" data-aos-once="true" class="btn-group" role="group"><a class="btn btn-dark" href="https://raw.githubusercontent.com/WinT-3794/SkyStone-Joker/master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/LibTMOA.java" role="button" target="_blank">View Source Code &nbsp;<span class="fab fa-github" style="font-size: 1.2em;display: inline-block;padding: auto;"></span></a>
-                        <a
-                            class="btn btn-success" href="https://raw.githubusercontent.com/WinT-3794/SkyStone-Joker/master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/LibTMOA.java" role="button" target="_blank">Download File&nbsp;<span class="fas fa-file-download" style="font-size: 1.2em;display: inline-block;padding: auto;"></span></a><a class="btn btn-primary" href="#">See Docs&nbsp;<span class="far fa-file-alt"></span></a></div>
-                </div>
-            </div>
-        </section>
-        <section class="clean-block clean-info dark">
-            <div class="container">
-                <div class="block-heading">
-                    <h2 class="text-info">Legacy Projects</h2>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-md-6" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
-                        <h3>AutoLocker</h3>
-                        <div class="getting-started-info">
-                            <p class="text-justify">The innovation of the security, you can manage your electronic padlock with your phone or computer via Bluetooth 2.0. You can open or close using a RFID Card or using a Electronic Device. If you think it is easy to hack, don't
-                                worry, all the connections and passwords are encrypted! Bye Bye Hackers!</p>
-                            <div data-aos="fade" data-aos-delay="100" data-aos-once="true" class="btn-group" role="group"><a class="btn btn-dark" href="https://github.com/mcn2004/AutoLocker-Arduino" role="button" target="_blank">View on GitHub&nbsp;<span class="fab fa-github" style="font-size: 1.2em;display: inline-block;padding: auto;"></span></a>
-                                <a
-                                    class="btn btn-primary" href="#">See Website&nbsp;<span class="far fa-file-alt"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6" data-aos="fade-left" data-aos-duration="800" data-aos-once="true"><img class="img-thumbnail image-zoom" src="assets/img/tech/AutoLocker.png"></div>
-                </div>
-            </div>
-        </section>
-        <section class="clean-block clean-info dark" style="background-color: #fff;">
-            <div class="container" style="margin-top: 120px;">
-                <div class="row align-items-center" style="background-color: #fff;">
-                    <div class="col-md-6" data-aos="fade-right" data-aos-duration="800" data-aos-once="true"><img class="img-thumbnail image-zoom" src="https://smealum.github.io/3ds/images/logo.png"></div>
-                    <div class="col-md-6" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
-                        <h3>MacHack - 3DS</h3>
-                        <div class="getting-started-info">
-                            <p class="text-justify">A hacking manager for N3DS consoles. This tool has a CFW for whatever mod that you want for your console. This tool is noob-friendly, but it can be used by experts. This tool was based in GodMod9 and Luma3DS, allowing a large-compatibility
-                                with a lot of scripts.</p>
-                            <div data-aos="fade" data-aos-delay="100" data-aos-once="true" class="btn-group" role="group"><a class="btn btn-dark" href="https://github.com/mcn2004/MacHack-3DS" role="button" target="_blank">View on GitHub&nbsp;<span class="fab fa-github" style="font-size: 1.2em;display: inline-block;padding: auto;"></span></a>
-                                <a
-                                    class="btn btn-primary" href="#">See Website&nbsp;<span class="far fa-file-alt"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="clean-block clean-info dark">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
-                        <h3>Macnolo StupiidHax</h3>
-                        <div class="getting-started-info">
-                            <p class="text-justify">An easy way to run JSTypeHax exploits for Wii U 5.5.1 - 5.5.3 (for Homebrew). First, you enter&nbsp;<a href="./stupiidhax/index.html">this website</a>&nbsp;from the Wii U browser, then you have to select a delta, and finally,
-                                the payload of the exploit will act alone. And you get Homebrew in your Wii U! That's it.</p>
-                            <div data-aos="fade" data-aos-delay="100" data-aos-once="true" class="btn-group" role="group"><a class="btn btn-dark" href="https://github.com/mcn2004/AutoLocker-Arduino" role="button" target="_blank">View on GitHub&nbsp;<span class="fab fa-github" style="font-size: 1.2em;display: inline-block;padding: auto;"></span></a>
-                                <a
-                                    data-toggle="tooltip" data-bs-tooltip="" class="btn btn-warning" href="./stupiidhax/index.html" title="Only Wii U">Go to Macnolo StupiidHax&nbsp;<i class="fa fa-exclamation-triangle"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6" data-aos="fade-left" data-aos-duration="800" data-aos-once="true"><img class="img-thumbnail image-zoom" src="assets/img/tech/stupiidhax.png"></div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="page-footer dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <h5>Get started</h5>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Downloads</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>About us</h5>
-                    <ul>
-                        <li><a href="#">Contact us</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Support</h5>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li></li>
-                        <li><a href="#">Forums</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <p>© 2020 - Copyright - Macnolo Tech</p>
-        </div>
-    </footer>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-    <script src="https://kit.fontawesome.com/af72bd7fe4.js"></script>
-    <script src="assets/js/script.min.js"></script>
-</body>
-
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <title>Home - Macnolo Tech</title>
+      <meta name="description" content="A personal site about technology, new developments and programs, and hacks.">
+      <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/logo/favicon-16x16.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/logo/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="196x196" href="/assets/img/logo/favicon-196x196.png">
+      <link rel="icon" type="image/png" sizes="196x196" href="/assets/img/logo/favicon-196x196.png">
+      <link rel="icon" type="image/png" sizes="200x200" href="/assets/img/logo/logo.png">
+      <link rel="stylesheet" type="text/css" href="/assets/bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400">
+      <link rel="stylesheet" type="text/css" href="/assets/fonts/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="/assets/fonts/simple-line-icons.min.css">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+      <link rel="stylesheet" type="text/css" href="/assets/css/styles.min.css">
+  </head>
+  <body>
+      <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+          <div class="container"><a class="navbar-brand logo" href="#"><img src="/assets/img/logo/logo.png" width="40" style="margin: 5px;margin-bottom: 7px;margin-right: 7px;">Macnolo Tech</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+              <div
+                  class="collapse navbar-collapse" id="navcol-1">
+                  <ul class="nav navbar-nav ml-auto">
+                      <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Home</a></li>
+                      <li class="nav-item" role="presentation"><a class="nav-link" href="features.html">Features</a></li>
+                      <li class="nav-item" role="presentation"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                      <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html">About Us</a></li>
+                      <li class="nav-item" role="presentation"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                  </ul>
+          </div>
+          </div>
+      </nav>
+      <main class="page landing-page">
+          <section class="pt-4 pt-md-11" style="color: rgb(255,255,255);min-height: 400px;">
+              <div class="container">
+                  <div class="row align-items-center">
+                      <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="50" class="col-12 col-md-5 col-lg-6 order-md-2"><img class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" src="assets/img/tech/jumbotron.png"></div>
+                      <div data-aos="slide-up" data-aos-duration="800" data-aos-delay="100" class="text col-12 col-md-7 col-lg-6 order-md-1">
+                          <h2 style="color: rgba(0,0,0,0.88);font-size: 48px;font-family: Montserrat;line-height: 1.15;">Welcome to&nbsp;<br></h2>
+                          <h1 style="color: rgba(0,0,0,0.88);font-size: 48px;font-family: Montserrat;line-height: 1.15;"><span style="color: #335EEA;">Macnolo Tech</span><br></h1>
+                          <p></p>
+                          <h6 style="color: rgb(154,154,154);">Create everything you think possible.<br></h6>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <section class="clean-block clean-info dark">
+              <div class="container">
+                  <div class="block-heading">
+                      <h2 class="text-info">Recent Projects</h2>
+                      <p>In this zone, you will find all the latest projects of Macnolo Tech.</p>
+                  </div>
+                  <div class="row align-items-center">
+                      <div class="col-md-6" data-aos="fade-right" data-aos-duration="800" data-aos-once="true"><img class="img-thumbnail image-zoom" src="assets/img/tech/switch.jpg"></div>
+                      <div class="col-md-6" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+                          <h3>Switch Lan Play ++</h3>
+                          <div class="getting-started-info">
+                              <p class="text-justify">The revolucionary technology that allows the connection of several Nintendo Switch consoles to play with other people even if they are banned! This technology uses our servers to work.</p>
+                          </div>
+                          <div class="alert alert-warning" role="alert"><span><strong>Status:&nbsp;</strong>InDev</span></div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <section class="clean-block clean-info dark" style="background-color: #fff;">
+              <div class="container" style="margin-top: 120px;">
+                  <div class="row align-items-center" style="background-color: #fff;">
+                      <div class="col-md-6" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+                          <h3>LiteDS</h3>
+                          <div class="getting-started-info">
+                              <p class="text-justify">An open-source and cross-platform driver station for FIRST Robotics Competition from WinT 3794. Using this app, you can control and manage your robots, as the original driver station, but you can use your smartphone if you
+                                  like. All the processes are managed by an open-source engine written in JAVA, New-LibDS. This app has released for Android only, but it will be for iOS, Windows, Mac, and Linux. </p>
+                              <div data-aos="fade" data-aos-delay="100"
+                                  data-aos-once="true" class="btn-group" role="group"><a class="btn btn-dark" href="https://github.com/mcn2004/LiteDS" role="button" target="_blank">View on GitHub&nbsp;<span class="fab fa-github" style="font-size: 1.2em;display: inline-block;padding: auto;"></span></a><a class="btn btn-primary"
+                                      href="#">See Website&nbsp;<span class="far fa-file-alt"></span></a><a class="btn btn-success" href="https://play.google.com/store/apps/details?id=me.macnolo.liteds" target="_blank">Get in on Google Play&nbsp;<span class="fa fa-android btn-icon-prepend"></span></a></div>
+                          </div>
+                      </div>
+                      <div class="col-md-6" data-aos="fade-left" data-aos-duration="800" data-aos-once="true"><img class="img-thumbnail image-zoom" src="assets/img/tech/liteds-main.png" width="250px"><img class="img-thumbnail image-zoom" src="assets/img/tech/liteds-menu.png" width="250px"></div>
+                  </div>
+              </div>
+          </section>
+          <section class="clean-block features">
+              <div class="container scrollflow" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                  <div class="block-heading">
+                      <h2 class="text-info">LibTMOA</h2>
+                      <p>A simple, but powerful library for Mecanum movement.</p>
+                  </div>
+                  <div class="row justify-content-center">
+                      <div data-bs-hover-animate="pulse" class="col-md-5 feature-box"><i class="icon-star icon"></i>
+                          <h4>For FTC in Java</h4>
+                          <p class="text-justify">This library is made for the programming in your FTC robot chassis. You can control your chassis with only call one function in JAVA.</p>
+                      </div>
+                      <div data-bs-hover-animate="pulse" class="col-md-5 feature-box"><i class="icon-pencil icon"></i>
+                          <h4>Open Source</h4>
+                          <p class="text-justify">If you want to modify any data of our library, you can! This library is under GNU GPL v3 license.</p>
+                      </div>
+                      <div data-bs-hover-animate="pulse" class="col-md-5 feature-box"><i class="icon-screen-smartphone icon"></i>
+                          <h4>Simple, but powerful</h4>
+                          <p class="text-justify"><br>The library is made to reduce your FTC robot program in the simplest way when you program.<br><br></p>
+                      </div>
+                      <div data-bs-hover-animate="pulse" class="col-md-5 feature-box"><i class="icon-refresh icon"></i>
+                          <h4>Great Support</h4>
+                          <p class="text-justify">It is being updated day after day. However, if you have any issue, you can leave it in our suggestion zone.</p>
+                      </div>
+                      <div data-aos="fade" data-aos-delay="100" data-aos-once="true" class="btn-group" role="group"><a class="btn btn-dark" href="https://raw.githubusercontent.com/WinT-3794/SkyStone-Joker/master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/LibTMOA.java" role="button" target="_blank">View Source Code &nbsp;<span class="fab fa-github" style="font-size: 1.2em;display: inline-block;padding: auto;"></span></a>
+                          <a
+                              class="btn btn-success" href="https://raw.githubusercontent.com/WinT-3794/SkyStone-Joker/master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/LibTMOA.java" role="button" target="_blank">Download File&nbsp;<span class="fas fa-file-download" style="font-size: 1.2em;display: inline-block;padding: auto;"></span></a><a class="btn btn-primary" href="#">See Docs&nbsp;<span class="far fa-file-alt"></span></a></div>
+                  </div>
+              </div>
+          </section>
+          <section class="clean-block clean-info dark">
+              <div class="container">
+                  <div class="block-heading">
+                      <h2 class="text-info">Legacy Projects</h2>
+                  </div>
+                  <div class="row align-items-center">
+                      <div class="col-md-6" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+                          <h3>AutoLocker</h3>
+                          <div class="getting-started-info">
+                              <p class="text-justify">The innovation of the security, you can manage your electronic padlock with your phone or computer via Bluetooth 2.0. You can open or close using a RFID Card or using a Electronic Device. If you think it is easy to hack, don't
+                                  worry, all the connections and passwords are encrypted! Bye Bye Hackers!</p>
+                              <div data-aos="fade" data-aos-delay="100" data-aos-once="true" class="btn-group" role="group"><a class="btn btn-dark" href="https://github.com/mcn2004/AutoLocker-Arduino" role="button" target="_blank">View on GitHub&nbsp;<span class="fab fa-github" style="font-size: 1.2em;display: inline-block;padding: auto;"></span></a>
+                                  <a
+                                      class="btn btn-primary" href="#">See Website&nbsp;<span class="far fa-file-alt"></span></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-6" data-aos="fade-left" data-aos-duration="800" data-aos-once="true"><img class="img-thumbnail image-zoom" src="assets/img/tech/AutoLocker.png"></div>
+                  </div>
+              </div>
+          </section>
+          <section class="clean-block clean-info dark" style="background-color: #fff;">
+              <div class="container" style="margin-top: 120px;">
+                  <div class="row align-items-center" style="background-color: #fff;">
+                      <div class="col-md-6" data-aos="fade-right" data-aos-duration="800" data-aos-once="true"><img class="img-thumbnail image-zoom" src="https://smealum.github.io/3ds/images/logo.png"></div>
+                      <div class="col-md-6" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+                          <h3>MacHack - 3DS</h3>
+                          <div class="getting-started-info">
+                              <p class="text-justify">A hacking manager for N3DS consoles. This tool has a CFW for whatever mod that you want for your console. This tool is noob-friendly, but it can be used by experts. This tool was based in GodMod9 and Luma3DS, allowing a large-compatibility
+                                  with a lot of scripts.</p>
+                              <div data-aos="fade" data-aos-delay="100" data-aos-once="true" class="btn-group" role="group"><a class="btn btn-dark" href="https://github.com/mcn2004/MacHack-3DS" role="button" target="_blank">View on GitHub&nbsp;<span class="fab fa-github" style="font-size: 1.2em;display: inline-block;padding: auto;"></span></a>
+                                  <a
+                                      class="btn btn-primary" href="#">See Website&nbsp;<span class="far fa-file-alt"></span></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <section class="clean-block clean-info dark">
+              <div class="container">
+                  <div class="row align-items-center">
+                      <div class="col-md-6" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+                          <h3>Macnolo StupiidHax</h3>
+                          <div class="getting-started-info">
+                              <p class="text-justify">An easy way to run JSTypeHax exploits for Wii U 5.5.1 - 5.5.3 (for Homebrew). First, you enter&nbsp;<a href="./stupiidhax/index.html">this website</a>&nbsp;from the Wii U browser, then you have to select a delta, and finally,
+                                  the payload of the exploit will act alone. And you get Homebrew in your Wii U! That's it.</p>
+                              <div data-aos="fade" data-aos-delay="100" data-aos-once="true" class="btn-group" role="group"><a class="btn btn-dark" href="https://github.com/mcn2004/AutoLocker-Arduino" role="button" target="_blank">View on GitHub&nbsp;<span class="fab fa-github" style="font-size: 1.2em;display: inline-block;padding: auto;"></span></a>
+                                  <a
+                                      data-toggle="tooltip" data-bs-tooltip="" class="btn btn-warning" href="./stupiidhax/index.html" title="Only Wii U">Go to Macnolo StupiidHax&nbsp;<i class="fa fa-exclamation-triangle"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-6" data-aos="fade-left" data-aos-duration="800" data-aos-once="true"><img class="img-thumbnail image-zoom" src="assets/img/tech/stupiidhax.png"></div>
+                  </div>
+              </div>
+          </section>
+      </main>
+      <footer class="page-footer dark">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-3">
+                      <h5>Get started</h5>
+                      <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Downloads</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-3">
+                      <h5>About us</h5>
+                      <ul>
+                          <li><a href="#">Contact us</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-3">
+                      <h5>Support</h5>
+                      <ul>
+                          <li><a href="#">FAQ</a></li>
+                          <li></li>
+                          <li><a href="#">Forums</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-copyright">
+              <p>© 2020 - Copyright - Macnolo Tech</p>
+          </div>
+      </footer>
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+      <script src="https://kit.fontawesome.com/af72bd7fe4.js"></script>
+      <script src="assets/js/script.min.js"></script>
+  </body>
 </html>
-{{end}}
