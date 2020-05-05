@@ -1,0 +1,37 @@
+.navbar-img-logo{
+  margin: 5px;
+  margin-bottom: 7px;
+  margin-right: 7px;
+}
+
+.jumbo{
+  padding-top: 100px;
+  color: rgb(255,255,255);
+  min-height: 400px;
+}
+
+.jumbo-title-black{
+  color: rgba(0,0,0,0.88);
+  font-size: 48px;
+  font-family: Montserrat;
+  line-height: 1.15;
+}
+
+.jumbo-title{
+  color: rgba(0,0,0,0.88);
+  font-size: 48px;
+  font-family: Montserrat;
+  line-height: 1.15;
+}
+
+.jumbo-title-span{
+  color: #335EEA;
+}
+
+.jumbo-subtitle{
+  color: rgb(154,154,154);
+}
+
+main{
+  padding-top: 80px;
+}
