@@ -1,7 +1,7 @@
 import React from 'react'
 
-import JSONReposData from '../../content/github-repos-data.json'
-import JSONUserData from '../../content/github-user-data.json'
+import JSONReposData from '../../content/github/repos-data.json'
+import JSONUserData from '../../content/github/user-data.json'
 
 import { Container } from 'react-bootstrap'
 

@@ -10,7 +10,7 @@ export default () => (
       <Container>
           <Row className="align-items-center">
               <Col md={4} lg={{ span: 5, order: 12 }} data-aos="fade-up" data-aos-duration="800" data-aos-delay="50" className="order-md-2">
-                <Image className="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" src="header/jumbotron.svg"/>
+                <Image className="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" src={'/jumbotron.svg'} alt="Jumbotron"/>
               </Col>
               <Col data-aos="slide-up" data-aos-duration="800" data-aos-delay="100" md={7} lg={6} className="text order-md-1">
                   <h2 class="jumbo-title-black">Welcome to&nbsp;<br/></h2>

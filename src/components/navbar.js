@@ -10,13 +10,13 @@ export default () => (
     <Container>
       <Navbar.Brand className="logo">
         <Image src="/logo/logo.png" width="40" className="navbar-img-logo"/>
-        Macnolo Tech
+        <p className="d-none d-sm-inline">Macnolo Tech</p>
       </Navbar.Brand>
-      <Navbar.Toggle/>
+      <Navbar.Toggle className="border-0"/>
       <Navbar.Collapse>
         <Nav className="ml-auto">
           <Nav.Item>
-            <Nav.Link href="index.html">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
           </Nav.Item>
 
           <Nav.Item>

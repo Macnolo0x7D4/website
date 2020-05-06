@@ -1,0 +1,10 @@
+{
+  "title": "LiteDS",
+  "preview": "An open-source and cross-platform driver station for FIRST Robotics Competition from WinT 3794. Using this app, you can control and manage your robots, as the original driver station, but you can use your smartphone if you like. All the processes are managed by an open-source engine written in JAVA, New-LibDS. This app has released for Android only, but it will be for iOS, Windows, Mac, and Linux.",
+  "github_url": "https://github.com/mcn2004/LiteDS",
+  "page_uri": "/liteds",
+  "playstore_url": "https://play.google.com/store/apps/details?id=me.macnolo.liteds",
+  "image1_uri": "/liteds-main.png",
+  "image2_uri": "/liteds-menu.png",
+  "inverted": "true"
+}
