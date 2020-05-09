@@ -3,6 +3,8 @@ import React from "react";
 import '../styles/theme.min.css'
 import '../styles/master.css'
 
+import '../utils/fontawesome.js'
+
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 
