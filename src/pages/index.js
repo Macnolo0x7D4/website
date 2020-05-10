@@ -14,20 +14,23 @@ import ArticlePreview from '../components/article-preview'
 import { useStaticQuery, graphql } from 'gatsby'
 
 export default () => {
-  const data = useStaticQuery(graphql`
-      query MyQuery {
-        articleJson {
-          image1_uri
-          image2_uri
-          github_url
-          page_uri
-          playstore_url
-          preview
-          title
+  const articles_preview = useStaticQuery(graphql`
+      query ArticlesPreview {
+        allArticleJson {
+          nodes {
+            title
+            color
+            github_url
+            image1_uri
+            image2_uri
+            inverted
+            page_uri
+            playstore_url
+            preview
+          }
         }
       }
       `);
-      console.log(data);
   return (
   <React.Fragment>
     <header>
@@ -35,7 +38,11 @@ export default () => {
     </header>
     <main className="page landing-page">
       <Jumbotron/>
-      <ArticlePreview data={data}/>
+      {
+        articles_preview.allArticleJson.nodes.map(articleData => (
+          <ArticlePreview data={articleData}/>
+        ))
+      }
     </main>
     <Footer/>
   </React.Fragment>

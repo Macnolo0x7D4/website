@@ -5,6 +5,8 @@ import { Nav } from 'react-bootstrap'
 import { Container } from 'react-bootstrap'
 import { Image } from 'react-bootstrap'
 
+import { Link } from 'gatsby'
+
 export default () => (
   <Navbar bg="white" expand="lg" fixed="top" className="clean-navbar">
     <Container>
@@ -16,23 +18,23 @@ export default () => (
       <Navbar.Collapse>
         <Nav className="ml-auto">
           <Nav.Item>
-            <Nav.Link href="/">Home</Nav.Link>
+            <Link className="nav-link" to="/">Home</Link>
           </Nav.Item>
 
           <Nav.Item>
-            <Nav.Link href="features.html">Features</Nav.Link>
+            <Link className="nav-link">Features</Link>
           </Nav.Item>
 
           <Nav.Item>
-            <Nav.Link href="pricing.html">Pricing</Nav.Link>
+            <Link className="nav-link">Pricing</Link>
           </Nav.Item>
 
           <Nav.Item>
-            <Nav.Link href="about-us.html">About Us</Nav.Link>
+            <Link className="nav-link">About Us</Link>
           </Nav.Item>
 
           <Nav.Item>
-            <Nav.Link href="contact-us.html">Contact Us</Nav.Link>
+            <Link to='contact-us' className="nav-link">Contact</Link>
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>

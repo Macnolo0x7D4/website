@@ -6,5 +6,6 @@
   "playstore_url": "https://play.google.com/store/apps/details?id=me.macnolo.liteds",
   "image1_uri": "/liteds-main.png",
   "image2_uri": "/liteds-menu.png",
+  "color": "true",
   "inverted": "true"
 }
