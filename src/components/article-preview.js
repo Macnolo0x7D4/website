@@ -23,17 +23,13 @@ export default proc => {
       >
         <Container className="article-container">
           <Row className="align-items-center">
-            <Col
-              md={{ order: proc.data.inverted === "true" ? 1 : 12 }}
-            >
+            <Col md={{ order: proc.data.inverted === "true" ? 1 : 12 }}>
               <h3>
                 <Link to={proc.data.page_uri}>{proc.data.title}</Link>
               </h3>
               <div class="getting-started-info">
                 <p class="text-justify">{proc.data.preview}</p>
-                <ButtonGroup
-                  className="d-none d-lg-block"
-                >
+                <ButtonGroup className="d-none d-lg-block">
                   {proc.data.github_url !== "" ? (
                     <Button
                       as="a"
@@ -116,14 +112,14 @@ export default proc => {
             >
               <Image
                 className="image-zoom"
-	  	width={proc.data.image2_uri === "" ? "auto" : "250px"}
+                width={proc.data.image2_uri === "" ? "auto" : "250px"}
                 src={proc.data.image1_uri}
                 thumbnail
               />
               {proc.data.image2_uri !== "" && (
                 <Image
                   className="image-zoom d-none d-xl-inline"
-		  width="250px" 
+                  width="250px"
                   src={proc.data.image2_uri}
                   thumbnail
                 />

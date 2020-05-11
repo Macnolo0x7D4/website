@@ -9,22 +9,20 @@ import "../utils/fontawesome.js"
 import Navbar from "../components/navbar"
 import Footer from "../components/footer"
 
-export default (proc) => {
+export default proc => {
   return (
     <React.Fragment>
       <div className="application">
         <Helmet>
-          <meta charSet="utf-8"/>
+          <meta charSet="utf-8" />
           <title>{proc.title}</title>
         </Helmet>
       </div>
       <header>
-        <Navbar/>
+        <Navbar />
       </header>
-      <main className="page landing-page">
-        {proc.children}
-      </main>
-      <Footer/>
+      <main className="page landing-page">{proc.children}</main>
+      <Footer />
     </React.Fragment>
   )
 }

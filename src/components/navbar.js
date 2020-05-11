@@ -32,7 +32,9 @@ export default () => (
           </Nav.Item>
 
           <Nav.Item>
-            <Link to="about-us" className="nav-link">About Us</Link>
+            <Link to="about-us" className="nav-link">
+              About Us
+            </Link>
           </Nav.Item>
 
           <Nav.Item>

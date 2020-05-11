@@ -11,7 +11,7 @@ import ContactForm from "../components/contact-form.js"
 export default () => (
   <React.Fragment>
     <Application title="Contact Us - Macnolo Tech">
-      <ContactForm/>
+      <ContactForm />
     </Application>
   </React.Fragment>
 )

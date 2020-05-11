@@ -3,6 +3,8 @@ import React from "react"
 import "../styles/theme.min.css"
 import "../styles/master.css"
 
+import "../styles/aos.scss"
+
 import "../utils/fontawesome.js"
 
 import Application from "../layouts/application"
@@ -15,7 +17,7 @@ import { useStaticQuery, graphql } from "gatsby"
 export default () => {
   const articles_preview = useStaticQuery(graphql`
     query ArticlesPreview {
-      allArticleJson(sort: {order: ASC, fields: index}) {
+      allArticleJson(sort: { order: ASC, fields: index }) {
         nodes {
           title
           color
