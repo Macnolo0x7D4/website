@@ -1,8 +1,9 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 
 import "../styles/theme.min.css"
 import "../styles/master.css"
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import { Container } from "react-bootstrap"
 import { Form } from "react-bootstrap"
@@ -40,7 +41,12 @@ export default () => (
     </Form.Group>
     <Form.Group>
       <Button variant="primary" type="submit" block>
-	Send
+	<div class="d-flex justify-content-center">
+ 	  Send us your Idea!
+	  <div class="icon-margin">
+            <FontAwesomeIcon icon={["fas","envelope"]}/>
+	  </div>
+	</div>
       </Button>
     </Form.Group>
   </Form>

@@ -1,11 +1,12 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 
 import "../styles/theme.min.css"
 import "../styles/master.css"
 
-import { Application } from "./application.js"
-import { ContactForm } from "../components/contact-form.js"
+import "../utils/fontawesome.js"
+
+import Application from "./application.js"
+import ContactForm from "../components/contact-form.js"
 
 export default () => (
   <React.Fragment>
