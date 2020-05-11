@@ -116,12 +116,14 @@ export default proc => {
             >
               <Image
                 className="image-zoom"
+	  	width={proc.data.image2_uri === "" ? "auto" : "250px"}
                 src={proc.data.image1_uri}
                 thumbnail
               />
               {proc.data.image2_uri !== "" && (
                 <Image
                   className="image-zoom d-none d-xl-inline"
+		  width="250px" 
                   src={proc.data.image2_uri}
                   thumbnail
                 />

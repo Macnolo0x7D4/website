@@ -43,7 +43,7 @@ export default () => (
       </Row>
     </Container>
     <div className="footer-copyright">
-      <p>© 2020 - Copyright - Macnolo Tech</p>
+      <p>© 2020 - Macnolo Tech</p>
     </div>
   </footer>
 )
