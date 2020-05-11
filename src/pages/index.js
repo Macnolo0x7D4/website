@@ -5,7 +5,7 @@ import "../styles/master.css"
 
 import "../utils/fontawesome.js"
 
-import Application from "../components/application"
+import Application from "../layouts/application"
 
 import Jumbotron from "../components/jumbotron"
 import ArticlePreview from "../components/article-preview"
