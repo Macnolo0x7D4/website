@@ -11,7 +11,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Link } from "gatsby"
 
 export default proc => {
-  console.log("Proc: " + proc)
   return (
     <React.Fragment>
       <section
