@@ -10,3 +10,7 @@
 .image-zoom{
   transition: all 0.2s ease;
 }
+
+.animate__animated.animate__fadeInUp {
+  --animate-duration: 0.8s;
+}

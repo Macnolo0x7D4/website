@@ -4,6 +4,7 @@ import "../styles/theme.min.css"
 import "../styles/master.css"
 
 import "../styles/aos.scss"
+import "animate.css/animate.min.css"
 
 import "../utils/fontawesome.js"
 

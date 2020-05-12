@@ -8,7 +8,7 @@ import { Container } from "react-bootstrap"
 export default () => (
   <section class="pt-4 pt-md-11 jumbo">
     <Container>
-      <Row className="align-items-center">
+      <Row className="align-items-center animate__animated animate__fadeInUp">
         <Col md={4} lg={{ span: 5, order: 12 }} className="order-md-2">
           <Image
             className="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0"

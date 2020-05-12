@@ -5,8 +5,8 @@ exports.createPages = async ({ graphql, actions }) => {
     path: "contact-us",
     component: path.resolve("./src/layouts/contact-us.js"),
   }),
-  actions.createPage({
-    path: "about-us",
-    component: path.resolve("./src/layouts/about-us.js"),
-  })
+    actions.createPage({
+      path: "about-us",
+      component: path.resolve("./src/layouts/about-us.js"),
+    })
 }

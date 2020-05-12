@@ -19,6 +19,7 @@ export default proc => {
             ? "clean-block clean-info dark"
             : "clean-block clean-info light"
         }
+        key={proc.data.id}
       >
         <Container className="article-container">
           <Row className="align-items-center">
