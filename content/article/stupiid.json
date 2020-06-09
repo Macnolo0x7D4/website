@@ -1,0 +1,12 @@
+{
+  "index": 3,
+  "title": "Macnolo Stupiid Hax",
+  "preview": "An easy way to run JSTypeHax exploits for Wii U 5.5.1 - 5.5.3 (for Homebrew). First, you enter this website from the Wii U browser, then you have to select a delta, and finally, the payload of the exploit will act alone. And you get Homebrew in your Wii U! That's it.",
+  "github_url": "https://github.com/mcn2004/macnoloStupiidHax",
+  "page_uri": "",
+  "playstore_url": "",
+  "image1_uri": "/stupiidhax.png",
+  "image2_uri": "",
+  "color": "true",
+  "inverted": "true"
+}
