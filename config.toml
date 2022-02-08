@@ -118,24 +118,30 @@ weight = 3
 url = "https://twitter.com/Macnolo0x7D4/"
 
 [[params.social]]
-name = "LinkedIn"
-icon = "fa fa-2x fa-linkedin"
+name = "Discord"
+icon = "fa fa-2x fa-discord"
 weight = 4
-url = "https://www.linkedin.com/in/johndoe/"
+url = "https://discordapp.com/channels/538406165751660554"
 
-[[params.social]]
-name = "Medium"
-icon = "fa fa-2x fa-medium"
-weight = 5
-url = "https://medium.com/@johndoe"
+#[[params.social]]
+#name = "LinkedIn"
+#icon = "fa fa-2x fa-linkedin"
+#weight = 4
+#url = "https://www.linkedin.com/in/johndoe/"
 
-[[params.social]]
-name = "RSS"
-icon = "fa fa-2x fa-rss"
-weight = 6
-url = "https://myhugosite.com/index.xml"
-rel = "alternate"
-type = "application/rss+xml"
+#[[params.social]]
+#name = "Medium"
+#icon = "fa fa-2x fa-medium"
+#weight = 5
+#url = "https://medium.com/@johndoe"
+
+#[[params.social]]
+#name = "RSS"
+#icon = "fa fa-2x fa-rss"
+#weight = 6
+#url = "https://myhugosite.com/index.xml"
+#rel = "alternate"
+#type = "application/rss+xml"
 
 [languages.en]
 languageName = ":us:"
