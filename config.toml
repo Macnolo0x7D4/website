@@ -16,7 +16,7 @@ author = "Manuel Díaz"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = "Macnolo0x7D4's personal website"
 keywords = "blog,developer,personal"
-info = ["Hacking", "Full Stack", "Robotics"]
+info = ["FullStack, ReverseEng,", "GameDev, SysAdmin,", "Robotics, and Blockchain"]
 avatarURL = "images/avatar.png"
 #gravatar = "john.doe@example.com"
 dateFormat = "January 2, 2006"
@@ -36,7 +36,7 @@ hideColorSchemeToggle = false
 # Series see also post count
 maxSeeAlsoItems = 5
 # Custom CSS
-customCSS = []
+customCSS =  ["css/master.css"]
 # Custom SCSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
 customSCSS = []
 # Custom JS
