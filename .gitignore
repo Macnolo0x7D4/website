@@ -1,71 +1,21 @@
-
-# Created by https://www.toptal.com/developers/gitignore/api/hugo,emacs
-# Edit at https://www.toptal.com/developers/gitignore?templates=hugo,emacs
-
-### Emacs ###
-# -*- mode: gitignore; -*-
-*~
-\#*\#
-/.emacs.desktop
-/.emacs.desktop.lock
-*.elc
-auto-save-list
-tramp
-.\#*
-
-# Org-mode
-.org-id-locations
-*_archive
-
-# flymake-mode
-*_flymake.*
-
-# eshell files
-/eshell/history
-/eshell/lastdir
-
-# elpa packages
-/elpa/
-
-# reftex files
-*.rel
-
-# AUCTeX auto folder
-/auto/
-
-# cask packages
-.cask/
+# build output
 dist/
+# generated types
+.astro/
 
-# Flycheck
-flycheck_*.el
+# dependencies
+node_modules/
 
-# server auth directory
-/server/
-
-# projectiles files
-.projectile
-
-# directory configuration
-.dir-locals.el
-
-# network security
-/network-security.data
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
 
-### Hugo ###
-# Generated files by hugo
-/public/
-/resources/_gen/
-/assets/jsconfig.json
-hugo_stats.json
+# environment variables
+.env
+.env.production
 
-# Executable may be added to repository
-hugo.exe
-hugo.darwin
-hugo.linux
-
-# Temporary lock file while building
-/.hugo_build.lock
-
-# End of https://www.toptal.com/developers/gitignore/api/hugo,emacs
+# macOS-specific files
+.DS_Store
