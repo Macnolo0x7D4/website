@@ -1,0 +1,42 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <h1>🧑‍🚀 Hi! I'm Manolo!</h1>
+      <p>
+        Welcome to my live portfolio! You will find here a collection of my
+        projects and a little bit about me.
+      </p>
+      <p>
+        I'm a software developer from Mexico. I'm passionate about technology
+        and I love to learn new things.
+      </p>
+      <p>
+        I started when I was 8 years old while trying to understand how video
+        games and operating systems works. And that curiosity was huge, so I
+        started learning about programming.
+      </p>
+      <p>
+        Then, as I grew up, I started creating websites with Django, Rails and
+        Phoenix, as Backend, and React, Angular, NextJS and Svelte, as Frontend.
+      </p>
+      <p>
+        I was also interested in developing mobile applications for Android
+        using Kotlin and with Swift for iOS and macOS.
+      </p>
+      <p>And I also teach Java programming courses focused on robotics.</p>
+    </main>
+    <Footer />
+  </body>
+</html>
