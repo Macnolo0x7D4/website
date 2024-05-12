@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "website.fullname" . }}
+  name: "website"
   labels:
-    {{- include "website.labels" . | nindent 4 }}
+    app: "website" 
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      {{- include "website.selectorLabels" . | nindent 6 }}
+      app: "website"
   template:
     metadata:
       labels:
-        {{- include "website.labels" . | nindent 8 }}
+        app: "website"
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
@@ -21,7 +21,6 @@ spec:
       containers:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
-          imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}
