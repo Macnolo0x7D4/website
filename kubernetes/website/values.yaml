@@ -9,10 +9,14 @@ service:
   port: 80
 
 ingress:
-  enabled: false
+  enabled: true
   className: ""
   annotations: {}
   hosts:
+    - host: www.macnolo.net
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
     - host: macnolo.net
       paths:
         - path: /
