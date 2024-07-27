@@ -11,7 +11,8 @@ service:
 ingress:
   enabled: true
   className: ""
-  annotations: {}
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
   hosts:
     - host: www.macnolo.net
       paths:
@@ -21,7 +22,11 @@ ingress:
       paths:
         - path: /
           pathType: ImplementationSpecific
-  tls: []
+  tls:
+  - hosts:
+    - macnolo.net
+    - www.macnolo.net
+    secretName: macnolo-tls
 
 resources: 
   limits:
