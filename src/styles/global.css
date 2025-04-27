@@ -1,10 +1,13 @@
 @import "tailwindcss";
 
 @theme {
+  --default-font-family: 'Jetbrains Mono', monospace;
   --color-base: #1e1e2e;
   --color-blue: #89b4fa;
   --color-sky: #89dceb;
   --color-green: #a6e3a1;
   --color-mauve: #cba6f7;
   --color-red: #f38ba8;
+  --color-yellow: #f9e2af;
+  --color-rosewater: #f5e0dc;
 }

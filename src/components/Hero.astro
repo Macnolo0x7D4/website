@@ -1,0 +1,38 @@
+---
+const name = "Manuel Díaz";
+const title = "Full Stack Engineer";
+const experience = "Full-stack developer proficient in designing, building, and deploying web applications.";
+---
+
+<div class="max-w-2xl my-16">
+  <div class="text-left">
+    <h1 class="text-4xl font-bold mb-2 typeme text-white">{name}</h1>
+    <h2 class="text-3xl text-gray-200 font-semibold mb-4">{title}</h2>
+    <p class="text-lg text-sky">{experience}</p>
+  </div>
+</div>
+
+<style>
+  .typeme {
+    width: 12ch;
+    animation: typing 2s steps(11), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 10px solid #f2d5cf;
+  }
+
+  @keyframes fade {
+    0% { opacity: 0}
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes typing {
+    0% { width: 0; }
+    100% { width: 12ch; }
+  }
+      
+  @keyframes blink {
+    50% { border-color: transparent;}
+  }
+</style>

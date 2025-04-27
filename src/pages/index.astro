@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import Navbar from "../components/Navbar.astro";
 import Hero from "../components/Hero.astro";
+import WhoAmI from "../components/WhoAmI.astro";
 ---
 
 <html lang="en">
@@ -10,10 +11,16 @@ import Hero from "../components/Hero.astro";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 		<title>Manuel Díaz</title>
 	</head>
 	<body class="bg-base">
     <Navbar/>
-    <Hero/>
+    <main class="max-w-4xl mx-auto px-2">
+      <Hero/>
+      <WhoAmI/>
+    </main>
 	</body>
 </html>
