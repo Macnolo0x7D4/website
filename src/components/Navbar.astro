@@ -3,19 +3,46 @@ import Link from './Link.astro';
 ---
 
 <header class="w-full py-2">
-  <nav class="max-w-2xl mx-auto flex justify-between gap-4">
+  <nav class="max-w-4xl mx-auto flex justify-between items-center gap-4 px-4">
     <div class="flex items-center">
       <p class="text-lg font-bold text-gray-100">Manuel Díaz</p>
     </div>
-    <div class="grow flex justify-center">
+
+    <div class="hidden md:flex grow justify-center">
       <div class="flex max-w-xl gap-4 px-8 py-2">
         <Link title="Tech Stack" href="#tech"/>
         <Link title="Experience" href="#experience"/>
         <Link title="Projects" href="#projects"/>
       </div>
     </div>
+
     <div class="flex items-center">
-      <p class="text-lg font-bold text-gray-100">Contact me</p>
+      <p class="hidden md:block text-lg font-bold text-gray-100">Contact me</p>
+      <button class="md:hidden text-gray-100 p-2" aria-label="Open menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
     </div>
   </nav>
 </header>
+
+<div id="mobile-menu" class="hidden md:hidden">
+  <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+    <Link title="Tech Stack" href="#tech" mobile={true}/>
+    <Link title="Experience" href="#experience" mobile={true}/>
+    <Link title="Projects" href="#projects" mobile={true}/>
+    <Link title="Contact me" href="#contact" mobile={true}/>
+  </div>
+</div>
+
+<script>
+  const menuButton = document.querySelector('button[aria-label="Open menu"]');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuButton?.addEventListener('click', () => {
+    console.log('Menu button clicked - Implement menu toggle logic here');
+     mobileMenu?.classList.toggle('hidden');
+  });
+</script>
+
