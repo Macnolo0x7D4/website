@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
 ---
 
 <html lang="en">
@@ -8,9 +10,10 @@ import "../styles/global.css";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Manuel Díaz</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="bg-base">
+    <Navbar/>
+    <Hero/>
 	</body>
 </html>

@@ -1,0 +1,21 @@
+---
+import Link from './Link.astro';
+---
+
+<header class="w-full py-2">
+  <nav class="max-w-2xl mx-auto flex justify-between gap-4">
+    <div class="flex items-center">
+      <p class="text-lg font-bold text-gray-100">Manuel Díaz</p>
+    </div>
+    <div class="grow flex justify-center">
+      <div class="flex max-w-xl gap-4 px-8 py-2">
+        <Link title="Tech Stack" href="#tech"/>
+        <Link title="Experience" href="#experience"/>
+        <Link title="Projects" href="#projects"/>
+      </div>
+    </div>
+    <div class="flex items-center">
+      <p class="text-lg font-bold text-gray-100">Contact me</p>
+    </div>
+  </nav>
+</header>
