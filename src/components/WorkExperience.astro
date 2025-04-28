@@ -36,12 +36,10 @@ const jobs = [
 ]
 ---
 
-<Section title="Work Experience">
+<Section title="Work Experience" id="work">
     <ul class="flex flex-col gap-y-8">
         {jobs.map(job => (
             <Job title={job.title} timeline={job.timeline} summary={job.summary} />
         ))}
     </ul>
 </Section>
-
-
