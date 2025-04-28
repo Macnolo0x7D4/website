@@ -1,0 +1,18 @@
+---
+import Section from "./Section.astro"
+import TechBadge from "./TechBadge.astro"
+---
+<Section title="Skills">
+  <div>
+    <h3 class="text-xl text-mauve">Languages & Techs</h3>
+    <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+      <TechBadge name="Elixir" image="elixir.png"/>
+      <TechBadge name="Phoenix" image="phoenix.png"/>
+      <TechBadge name="Java" image="java.png"/>
+      <TechBadge name="Go" image="go.png"/>
+      <TechBadge name="React" image="react.png"/>
+      <TechBadge name="Next.js" image="next.png" invert/>
+    </div>
+  </div>
+</Section>
+
