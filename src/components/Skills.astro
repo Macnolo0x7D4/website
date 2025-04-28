@@ -1,25 +1,56 @@
 ---
 import Section from "./Section.astro"
 import TechBadge from "./TechBadge.astro"
+
+const techs = [
+  {
+    name: "Elixir",
+    image: "elixir.png"
+  },
+  {
+    name: "Phoenix",
+    image: "phoenix.png"
+  },
+  {
+    name: "Java",
+    image: "java.png"
+  },
+  {
+    name: "Go",
+    image: "go.png"
+  },
+  {
+    name: "React",
+    image: "react.png"
+  },
+  {
+    name: "Next.js",
+    image: "next.png",
+    invert: true
+  },
+];
+
+const languages = [
+  { name: "Spanish", level: "Native" },
+  { name: "English", level: "Advanced (C1)" },
+];
 ---
-<Section title="Skills">
+
+<Section title="Skills" id="skills">
   <div>
     <h3 class="text-xl text-mauve">Programming Languages & Techs</h3>
     <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-      <TechBadge name="Elixir" image="elixir.png"/>
-      <TechBadge name="Phoenix" image="phoenix.png"/>
-      <TechBadge name="Java" image="java.png"/>
-      <TechBadge name="Go" image="go.png"/>
-      <TechBadge name="React" image="react.png"/>
-      <TechBadge name="Next.js" image="next.png" invert/>
+      {techs.map(tech => (
+        <TechBadge name={tech.name} image={tech.image} invert={tech.invert} />
+      ))}
     </div>
   </div>
   <div class="mt-4">
     <h3 class="text-xl text-mauve">Languages</h3>
     <ul class="mt-2">
-      <li>Spanish - Native</li>
-      <li>English - Advanced (C1)</li>
+      {languages.map(lang => (
+        <li>{lang.name} - {lang.level}</li>
+      ))}
     </ul>
   </div>
 </Section>
-
