@@ -38,19 +38,32 @@ const languages = [
 
 <Section title="Skills" id="skills">
   <div>
-    <h3 class="text-xl text-mauve">Programming Languages & Techs</h3>
+    <h3>Programming Languages & Techs</h3>
     <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
       {techs.map(tech => (
-        <TechBadge name={tech.name} image={tech.image} invert={tech.invert} />
+      <TechBadge name={tech.name} image={tech.image} invert={tech.invert} />
       ))}
     </div>
   </div>
   <div class="mt-4">
-    <h3 class="text-xl text-mauve">Languages</h3>
+    <h3>Languages</h3>
     <ul class="mt-2">
       {languages.map(lang => (
-        <li>{lang.name} - {lang.level}</li>
+      <li>{lang.name} - {lang.level}</li>
       ))}
     </ul>
+  </div>
+  <div class="mt-4">
+    <h3>Summary</h3>
+    <div class="mt-2">
+      <p>I've been coding in <strong>Java</strong> for over <strong>8 years</strong>, working with stuff like <strong>Spring, WPILib, LWJGL, and Android development</strong>. I've also dabbled in <strong>Kotlin</strong> and <strong>Scala</strong>.</p>
+      <p>As for <strong>TypeScript</strong>, I actually started with <strong>JavaScript over 10 years ago</strong>. I switched to TypeScript because it helps smooth out some of JavaScript's rough edges. I've used it with frameworks like <strong>React, Next.js, Svelte, Angular</strong>, and lots of other JS tools.</p>
+      <p>Then there's <strong>Elixir</strong>. I've been using it <strong>professionally for about 2 years</strong> now. I really enjoy the way it works and I'm always eager to learn more.</p>
+      <p>I've also worked with other languages like <strong>Python, Ruby, C/C++, C#, Swift, and Go</strong>.</p>
+      <p>On the database side, I'm familiar with relational databases like <strong>PostgreSQL, MySQL, Oracle, and SQLite</strong>, as well as NoSQL ones like <strong>MongoDB and Redis</strong>.</p>
+      <p>Cloud-wise, I've got experience with <strong>AWS, GCP, and Azure</strong>. Since I use Linux daily, I'm comfortable managing <strong>Linux servers</strong> too.</p>
+      <p>I enjoy designing software architecture, especially using approaches like <strong>Domain-Driven Design</strong> or <strong>Hexagonal Architecture</strong>. Designing <strong>microservices</strong> is also something I've done.</p>
+      <p>Right now, I'm digging into <strong>Rust</strong> and <strong>Clojure</strong>, and I'm curious about <strong>Zig</strong> too.</p>
+    </div>
   </div>
 </Section>
