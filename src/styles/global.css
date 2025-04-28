@@ -12,3 +12,19 @@
   --color-rosewater: #f5e0dc;
   --color-mantle: #181825;
 }
+
+h2 {
+  @apply text-2xl font-bold text-green;
+}
+
+h3 {
+  @apply text-xl text-mauve mt-2 mb-3;
+}
+
+strong {
+  @apply font-bold text-white;
+}
+
+li, p {
+  @apply text-gray-300 pb-3;
+}
