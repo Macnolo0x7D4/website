@@ -47,9 +47,11 @@ const languages = [
   </div>
   <div class="mt-4">
     <h3>Languages</h3>
-    <ul class="mt-2">
+   <ul class="mt-2 ml-2 list-disc list-inside"> 
       {languages.map(lang => (
-      <li>{lang.name} - {lang.level}</li>
+        <li>
+          <span class="font-semibold">{lang.name}:</span> {lang.level}
+        </li>
       ))}
     </ul>
   </div>
