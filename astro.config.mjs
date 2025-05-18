@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-import tailwindcss from "@tailwindcss/vite";
+import node from '@astrojs/node';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   vite: {
@@ -9,4 +10,7 @@ export default defineConfig({
       allowedHosts: ['vm.local'],
     }
   },
+  adapter: node({
+    mode: 'standalone',
+  }),
 });
