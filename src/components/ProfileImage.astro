@@ -39,7 +39,7 @@ const art = [
 ]
 ---
 
-<div class="text-gray-500 text-xs leading-none tracking-tighter">
+<div class={`text-gray-500 text-xs leading-none tracking-tighter min-w-[50ch]`}>
   {art.map((line, i) => (
     <span class="block typemea" style={`--chars: ${line.trimEnd().length}; --i: ${i};`}>
       {line}
