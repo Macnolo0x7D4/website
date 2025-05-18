@@ -1,14 +1,19 @@
 ---
+import ProfileImage from "./ProfileImage.astro"
+
 const name = "Manuel Díaz";
 const title = "Full Stack Engineer";
 const experience = "Full-stack developer proficient in designing, building, and deploying web applications.";
 ---
 
-<div class="max-w-2xl my-16 flex">
-  <div class="text-left w-2/3">
+<div class="my-16 flex flex-col lg:flex-row">
+  <div class="text-left w-full lg:w-1/2 flex flex-col justify-center">
     <h1 class="text-5xl font-bold mb-2 typeme text-white">{name}</h1>
     <h2 class="text-3xl text-gray-200 font-semibold mb-4">{title}</h2>
     <p class="text-lg text-sky">{experience}</p>
+  </div>
+  <div class="w-full lg:w-1/2 flex justify-center">
+    <ProfileImage/>
   </div>
 </div>
 
@@ -19,12 +24,6 @@ const experience = "Full-stack developer proficient in designing, building, and 
     white-space: nowrap;
     overflow: hidden;
     border-right: 10px solid #f2d5cf;
-  }
-
-  @keyframes fade {
-    0% { opacity: 0}
-    50% { opacity: 0; }
-    100% { opacity: 1; }
   }
 
   @keyframes typing {
