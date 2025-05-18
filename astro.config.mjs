@@ -1,13 +1,16 @@
+// @ts-check
 import { defineConfig } from 'astro/config';
-import mdx from '@astrojs/mdx';
-import sitemap from '@astrojs/sitemap';
-import node from "@astrojs/node";
+import node from '@astrojs/node';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://macnolo.net',
-  integrations: [mdx(), sitemap()],
-  output: "server",
+  vite: {
+    plugins: [tailwindcss()],
+    server: {
+      allowedHosts: ['vm.local'],
+    }
+  },
   adapter: node({
-    mode: "standalone"
-  })
+    mode: 'standalone',
+  }),
 });

@@ -1,42 +1,32 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import WhoAmI from "../components/WhoAmI.astro";
+import WorkExperience from "../components/WorkExperience.astro";
+import Skills from "../components/Skills.astro";
 import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <Header title={SITE_TITLE} />
-    <main>
-      <h1>🧑‍🚀 Hi! I'm Manolo!</h1>
-      <p>
-        Welcome to my live portfolio! You will find here a collection of my
-        projects and a little bit about me.
-      </p>
-      <p>
-        I'm a software developer from Mexico. I'm passionate about technology
-        and I love to learn new things.
-      </p>
-      <p>
-        I started when I was 8 years old while trying to understand how video
-        games and operating systems works. And that curiosity was huge, so I
-        started learning about programming.
-      </p>
-      <p>
-        Then, as I grew up, I started creating websites with Django, Rails and
-        Phoenix, as Backend, and React, Angular, NextJS and Svelte, as Frontend.
-      </p>
-      <p>
-        I was also interested in developing mobile applications for Android
-        using Kotlin and with Swift for iOS and macOS.
-      </p>
-      <p>And I also teach Java programming courses focused on robotics.</p>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+		<title>Manuel Díaz</title>
+	</head>
+	<body class="bg-base">
+    <Navbar/>
+    <main class="max-w-4xl mx-auto px-2">
+      <Hero/>
+      <WhoAmI/>
+      <Skills/>
+      <WorkExperience/>
     </main>
-    <Footer />
-  </body>
+    <Footer/>
+	</body>
 </html>

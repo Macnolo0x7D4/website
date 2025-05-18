@@ -1,0 +1,50 @@
+---
+import Section from "./Section.astro"
+import Job from "./Job.astro"
+
+const jobs = [
+    {
+        title: "Junior Software Engineer - Vordutec",
+        timeline: "Dec 2023 - Present",
+        summary: "Currently building and maintaining backend services (Elixir/Phoenix) for insurance products. Led some backend feature work, helped design DB schemas, and integrated insurance APIs like quoting calculators. Also dipped into frontend (NextJS/Angular) and cloud stuff (AWS, Kubernetes).",
+    },
+    {
+        title: "Robotics Instructor - IDR",
+        timeline: "Jan 2024 - Present",
+        summary: "Teaching high schoolers Java and C++ for FIRST Robotics Competition (FRC) and Arduino projects. Includes creating and delivering the lessons.",
+    },
+    {
+      title: "Founder - Learn Robotics",
+      timeline: "March 2022 - Present",
+      summary: "Founded Learning FIRST Robotics (a.k.a. Learn Robotics), a non-profit organization and community focused on teaching STEM knowledge for FIRST Tech Challenge and FIRST Robotics Competition online, primarily for students in Latam. Grew the community to include more than +2000 students globally."
+    },
+    {
+        title: "Web & Mobile Developer - Freelance",
+        timeline: "2021 - Present",
+        summary: "Been freelancing since 2021, whipping up websites and mobile apps for small businesses. Also tackled e-commerce projects using Shopify and WooCommerce.",
+    },
+    {
+        title: "Junior Software Engineer - Kogni Studio",
+        timeline: "Apr 2023 - Nov 2023",
+        summary: "Helped build their corporate website using Phoenix (Elixir) for the backend and Sveltekit/Tailwind for the frontend. Also integrated OpenAI and Meta APIs in Elixir to make AI learning chatbots and built features for client portals.",
+    },
+    {
+        title: "Web Developer Intern - Hola Cash",
+        timeline: "May 2022 - Feb 2023",
+        summary: "Built 5 e-commerce platforms end-to-end with Next.js, TailwindCSS, and Firebase, helping clients grow their revenue and increasing company commissions. Also collaborated on deployments (using Vercel) and infrastructure management. Got some experience with Python and TypeScript along the way.",
+    },
+    {
+        title: "Minecraft Mod Developer - Freelance ",
+        timeline: "2020 - 2021",
+        summary: "This is where it all started professionally! I dove into freelancing on Fiverr, creating custom Minecraft mods, server plugins, and clients.",
+    }
+]
+---
+
+<Section title="Work Experience" id="work">
+  <ul>
+    {jobs.map(job => (
+      <Job title={job.title} timeline={job.timeline} summary={job.summary} />
+    ))}
+  </ul>
+</Section>

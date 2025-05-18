@@ -1,25 +1,17 @@
 {
-  "name": "macnolo-website",
+  "name": "website",
   "type": "module",
-  "version": "4.0.1",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
+    "dev": "astro dev --host 0.0.0.0",
+    "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.6.0",
-    "@astrojs/mdx": "^3.0.0",
-    "@astrojs/node": "^8.2.5",
-    "@astrojs/rss": "^4.0.5",
-    "@astrojs/sitemap": "^3.1.4",
-    "astro": "^4.8.2",
-    "typescript": "^5.4.5"
-  },
-  "devDependencies": {
-    "prettier": "^3.2.5",
-    "prettier-plugin-astro": "^0.13.0"
+    "@astrojs/node": "^9.2.1",
+    "@tailwindcss/vite": "^4.1.4",
+    "astro": "^5.7.5",
+    "tailwindcss": "^4.1.4"
   }
 }
