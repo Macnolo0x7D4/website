@@ -20,11 +20,11 @@ const links = [
 <header class="w-full py-2 bg-base/95 backdrop-blur-sm sticky top-0 z-50 border-b border-mantle">
   <nav class="max-w-4xl mx-auto flex justify-between items-center gap-4 px-4">
     <div class="flex items-center">
-      <p class="text-lg font-bold text-gray-100 hover:text-white transition-colors duration-300">Manuel Díaz</p>
+      <p class="text-lg font-bold text-gray-100 hover:text-white transition-colors duration-300 !m-0 !p-0 !leading-tight">Manuel Díaz</p>
     </div>
 
-    <div class="hidden md:flex grow justify-center">
-      <div class="flex max-w-xl gap-4 px-8 py-2">
+    <div class="hidden md:flex grow justify-center items-center">
+      <div class="flex items-center max-w-xl gap-4 px-8 py-2">
         {links.map((l) => <Link title={l.name} href={l.url}/> )}
       </div>
     </div>
