@@ -26,7 +26,21 @@ strong {
 }
 
 li, p {
-  @apply text-gray-300 pb-3;
+  @apply text-gray-300 pb-3 leading-relaxed;
+}
+
+/* Enhanced paragraph styling for better readability */
+p {
+  @apply text-gray-200 leading-7 mb-4 max-w-none;
+}
+
+/* Improved spacing and readability for content sections */
+.content-section p {
+  @apply text-gray-200 leading-7 mb-5 text-base;
+}
+
+.content-section p:last-child {
+  @apply mb-0;
 }
 
 /* Scroll animations */
