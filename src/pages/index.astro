@@ -5,28 +5,43 @@ import Hero from "../components/Hero.astro";
 import WhoAmI from "../components/WhoAmI.astro";
 import WorkExperience from "../components/WorkExperience.astro";
 import Skills from "../components/Skills.astro";
+import Projects from "../components/Projects.astro";
+import Contact from "../components/Contact.astro";
 import Footer from "../components/Footer.astro";
+import BackToTop from "../components/BackToTop.astro";
+import ScrollAnimations from "../components/ScrollAnimations.astro";
 ---
 
 <html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
+    <meta name="description" content="Manuel Díaz - Full Stack Engineer specializing in modern web development, mobile applications, and software architecture. Experienced in React, Next.js, Elixir, Phoenix, Java, and more." />
+    <meta name="keywords" content="Full Stack Developer, Software Engineer, React, Next.js, Elixir, Phoenix, Java, Web Development, Mobile Development" />
+    <meta name="author" content="Manuel Díaz" />
+    <meta property="og:title" content="Manuel Díaz - Full Stack Engineer" />
+    <meta property="og:description" content="Full-stack developer proficient in designing, building, and deploying web applications." />
+    <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-		<title>Manuel Díaz</title>
+		<title>Manuel Díaz - Full Stack Engineer | Portfolio</title>
 	</head>
 	<body class="bg-base">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 bg-blue text-white px-4 py-2 rounded-lg z-50 focus:outline-none focus:ring-2 focus:ring-white">Skip to main content</a>
     <Navbar/>
-    <main class="max-w-4xl mx-auto px-2">
+    <main id="main-content" class="max-w-4xl mx-auto px-2">
       <Hero/>
       <WhoAmI/>
       <Skills/>
+      <Projects/>
       <WorkExperience/>
+      <Contact/>
     </main>
     <Footer/>
+    <BackToTop/>
+    <ScrollAnimations/>
 	</body>
 </html>

@@ -1,0 +1,50 @@
+---
+---
+
+<button
+  id="back-to-top"
+  class="fixed bottom-8 right-8 bg-blue text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:bg-blue/90 hover:scale-110 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue focus:ring-blue/50 focus:ring-offset-2 focus:ring-offset-base opacity-0 pointer-events-none z-50"
+  aria-label="Back to top"
+>
+  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/>
+  </svg>
+</button>
+
+<script>
+  const backToTopButton = document.getElementById('back-to-top');
+  
+  function toggleBackToTopButton() {
+    if (window.scrollY > 300) {
+      backToTopButton?.classList.remove('opacity-0', 'pointer-events-none');
+      backToTopButton?.classList.add('opacity-100', 'pointer-events-auto');
+    } else {
+      backToTopButton?.classList.add('opacity-0', 'pointer-events-none');
+      backToTopButton?.classList.remove('opacity-100', 'pointer-events-auto');
+    }
+  }
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  // Show/hide button based on scroll position
+  window.addEventListener('scroll', toggleBackToTopButton);
+
+  // Handle click
+  backToTopButton?.addEventListener('click', scrollToTop);
+
+  // Handle keyboard navigation
+  backToTopButton?.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      scrollToTop();
+    }
+  });
+
+  // Initial check
+  toggleBackToTopButton();
+</script>

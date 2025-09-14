@@ -7,16 +7,20 @@ const links = [
     url: "#skills"
   },
   {
+    name: "Projects",
+    url: "#projects"
+  },
+  {
     name: "Work Experience",
     url: "#work"
   },
 ]
 ---
 
-<header class="w-full py-2">
+<header class="w-full py-2 bg-base/95 backdrop-blur-sm sticky top-0 z-50 border-b border-mantle">
   <nav class="max-w-4xl mx-auto flex justify-between items-center gap-4 px-4">
     <div class="flex items-center">
-      <p class="text-lg font-bold text-gray-100">Manuel Díaz</p>
+      <p class="text-lg font-bold text-gray-100 hover:text-white transition-colors duration-300">Manuel Díaz</p>
     </div>
 
     <div class="hidden md:flex grow justify-center">
@@ -25,31 +29,89 @@ const links = [
       </div>
     </div>
 
-    <div class="flex items-center">
-      <p class="hidden md:block text-lg font-bold text-gray-100">Contact me</p>
-      <button class="md:hidden text-gray-100 p-2" aria-label="Open menu">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <div class="flex items-center gap-4">
+      <a href="#contact" class="hidden md:block text-green hover:text-white transition-colors duration-300 font-medium">Contact me</a>
+      <button id="mobile-menu-button" class="md:hidden text-gray-100 p-2 hover:text-white hover:bg-mantle rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue focus:ring-blue/50" aria-label="Toggle menu">
+        <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+        <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
     </div>
   </nav>
 </header>
 
-<div id="mobile-menu" class="hidden md:hidden">
-  <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-    {links.map((l) => <Link title={l.name} href={l.url}/> )}
-    <Link title="Contact me" href="#contact"/>
+<div id="mobile-menu" class="md:hidden fixed top-16 left-0 right-0 bg-base/95 backdrop-blur-sm border-b border-mantle transform -translate-y-full opacity-0 transition-all duration-300 ease-out z-40">
+  <div class="px-4 py-6 space-y-4">
+    {links.map((l) => (
+      <div class="block">
+        <a href={l.url} class="block px-4 py-3 text-gray-300 hover:text-white hover:bg-mantle rounded-lg transition-all duration-300 mobile-menu-link">
+          {l.name}
+        </a>
+      </div>
+    ))}
+    <div class="block">
+      <a href="#contact" class="block px-4 py-3 text-green hover:text-white hover:bg-mantle rounded-lg transition-all duration-300 mobile-menu-link">
+        Contact me
+      </a>
+    </div>
   </div>
 </div>
 
 <script>
-  const menuButton = document.querySelector('button[aria-label="Open menu"]');
+  const menuButton = document.getElementById('mobile-menu-button');
   const mobileMenu = document.getElementById('mobile-menu');
+  const menuIcon = document.getElementById('menu-icon');
+  const closeIcon = document.getElementById('close-icon');
+  const menuLinks = document.querySelectorAll('.mobile-menu-link');
 
-  menuButton?.addEventListener('click', () => {
-    console.log('Menu button clicked - Implement menu toggle logic here');
-     mobileMenu?.classList.toggle('hidden');
+  let isMenuOpen = false;
+
+  function toggleMenu() {
+    isMenuOpen = !isMenuOpen;
+    
+    if (isMenuOpen) {
+      mobileMenu?.classList.remove('-translate-y-full', 'opacity-0');
+      mobileMenu?.classList.add('translate-y-0', 'opacity-100');
+      menuIcon?.classList.add('hidden');
+      closeIcon?.classList.remove('hidden');
+      menuButton?.setAttribute('aria-label', 'Close menu');
+      document.body.style.overflow = 'hidden';
+    } else {
+      mobileMenu?.classList.add('-translate-y-full', 'opacity-0');
+      mobileMenu?.classList.remove('translate-y-0', 'opacity-100');
+      menuIcon?.classList.remove('hidden');
+      closeIcon?.classList.add('hidden');
+      menuButton?.setAttribute('aria-label', 'Toggle menu');
+      document.body.style.overflow = '';
+    }
+  }
+
+  menuButton?.addEventListener('click', toggleMenu);
+
+  // Close menu when clicking on links
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (isMenuOpen) {
+        toggleMenu();
+      }
+    });
+  });
+
+  // Close menu when pressing Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isMenuOpen) {
+      toggleMenu();
+    }
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (isMenuOpen && !menuButton?.contains(e.target as Node) && !mobileMenu?.contains(e.target as Node)) {
+      toggleMenu();
+    }
   });
 </script>
 

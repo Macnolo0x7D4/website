@@ -28,3 +28,34 @@ strong {
 li, p {
   @apply text-gray-300 pb-3;
 }
+
+/* Scroll animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Enhanced focus styles */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-blue/50 focus:ring-offset-2 focus:ring-offset-base;
+}
+
+/* Smooth transitions for interactive elements */
+.interactive {
+  @apply transition-all duration-300 ease-out;
+}
+
+/* Button hover effects */
+.btn-primary {
+  @apply bg-blue text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-medium transition-all duration-300 hover:bg-blue/90 hover:scale-105 hover:shadow-lg hover:shadow-blue/25 focus:outline-none focus:ring-2 focus:ring-blue/50 focus:ring-offset-2 focus:ring-offset-base text-sm sm:text-base;
+}
+
+.btn-secondary {
+  @apply bg-green border-2 border-green text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-medium transition-all duration-300 hover:bg-green hover:text-black hover:scale-105 hover:shadow-lg hover:shadow-green/25 focus:outline-none focus:ring-2 focus:ring-green/50 focus:ring-offset-2 focus:ring-offset-base text-sm sm:text-base;
+}

@@ -2,11 +2,15 @@
 const { title, id } = Astro.props;
 ---
 
-<section class="mb-16 mt-2" id={id}>
-  <h2>
-    <span class="mr-2">$</span><span class="text-rosewater">{title}</span>
-  </h2>
-  <div class="mt-4">
+<section class="mb-20 mt-8 fade-in relative" id={id}>
+  <div class="mb-8">
+    <h2 class="relative">
+      <span class="mr-2 text-blue">$</span><span class="text-rosewater">{title}</span>
+    </h2>
+    <div class="h-px bg-gradient-to-r from-blue via-green to-transparent w-32 mt-3"></div>
+  </div>
+  <div class="mt-6 relative">
     <slot/>
   </div>
+  <div class="absolute -right-4 top-0 w-1 h-8 bg-gradient-to-b from-blue to-green opacity-20 rounded-full hidden lg:block"></div>
 </section>
