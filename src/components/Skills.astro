@@ -5,28 +5,33 @@ import TechBadge from "./TechBadge.astro"
 const techs = [
   {
     name: "Elixir",
-    image: "elixir.png"
+    devicon: "devicon-elixir-plain",
+    color: "#9966CC"
   },
   {
     name: "Phoenix",
-    image: "phoenix.png"
+    devicon: "devicon-phoenix-plain",
+    color: "#FD4F00"
   },
   {
     name: "Java",
-    image: "java.png"
+    devicon: "devicon-java-plain",
+    color: "#ED8B00"
   },
   {
     name: "Go",
-    image: "go.png"
+    devicon: "devicon-go-plain",
+    color: "#00ADD8"
+  },
+  {
+    name: "Python",
+    devicon: "devicon-python-plain",
+    color: "#FFD43B"
   },
   {
     name: "React",
-    image: "react.png"
-  },
-  {
-    name: "Next.js",
-    image: "next.png",
-    invert: true
+    devicon: "devicon-react-original",
+    color: "#61DAFB"
   },
 ];
 
@@ -41,7 +46,7 @@ const languages = [
     <h3>Programming Languages & Techs</h3>
     <div class="mt-4 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-3 sm:gap-4">
       {techs.map(tech => (
-      <TechBadge name={tech.name} image={tech.image} invert={tech.invert} />
+      <TechBadge name={tech.name} devicon={tech.devicon} color={tech.color} />
       ))}
     </div>
   </div>
@@ -59,13 +64,14 @@ const languages = [
     <h3>Summary</h3>
     <div class="mt-2">
       <p>I've been coding in <strong>Java</strong> for over <strong>8 years</strong>, working with stuff like <strong>Spring, WPILib, LWJGL, and Android development</strong>. I've also dabbled in <strong>Kotlin</strong>.</p>
-      <p>As for <strong>TypeScript</strong>, I actually started with <strong>JavaScript over 10 years ago</strong>. I switched to TypeScript because it helps smooth out some of JavaScript's rough edges. I've used it with frameworks like <strong>React, Next.js, Svelte, Angular</strong>, and lots of other JS tools.</p>
-      <p>Then there's <strong>Elixir</strong>. I've been using it <strong>professionally for about 2 years</strong> now. I really enjoy the way it works and I'm always eager to learn more.</p>
+      <p>As for <strong>TypeScript</strong>, I actually started with <strong>JavaScript over 10 years ago</strong>. I switched to TypeScript because it helps smooth out some of JavaScript's rough edges. I've used it with frameworks like <strong>React, Next.js, Svelte, Angular, Express.js</strong>, and lots of other JS tools.</p>
+      <p>Then there's <strong>Elixir</strong>. I've been using it <strong>professionally for about 2 years</strong> now with <strong>Phoenix</strong>. I really enjoy the way it works and I'm always eager to learn more about the Actor model and fault tolerance.</p>
       <p>I've also worked with other languages like <strong>Python, Ruby, C/C++, C#, Swift, and Go</strong>.</p>
       <p>On the database side, I'm familiar with relational databases like <strong>PostgreSQL, MySQL, Oracle, and SQLite</strong>, as well as NoSQL ones like <strong>MongoDB and Redis</strong>.</p>
-      <p>Cloud-wise, I've got experience with <strong>AWS, GCP, and Azure</strong>. Since I use Linux daily, I'm comfortable managing <strong>Linux servers</strong> too.</p>
-      <p>I enjoy designing software architecture, especially using approaches like <strong>Domain-Driven Design</strong> or <strong>Hexagonal Architecture</strong>. Designing <strong>microservices</strong> is also something I've done.</p>
-      <p>I am used to working with agile methodologies such as <strong>Scrum</strong> and <strong>Extreme Programming (XP)</strong>, and I often practice <strong>Test Driven Development (TDD)</strong>.</p>
+      <p>Cloud-wise, I've got experience with <strong>AWS</strong> and various deployment tools. I work with <strong>Docker, Kubernetes (RKE2), GitHub Actions, and ArgoCD</strong> for containerization and CI/CD. Since I use Linux daily, I'm comfortable managing <strong>Linux servers</strong> too.</p>
+      <p>I enjoy designing software architecture, especially using approaches like <strong>Domain-Driven Design, Hexagonal Architecture, and Test-Driven Development (TDD)</strong>. Designing <strong>microservices</strong> with proper messaging using tools like <strong>RabbitMQ</strong> is also something I've done.</p>
+      <p>I've worked with monitoring tools like <strong>Grafana and Prometheus</strong> to keep an eye on system performance and health.</p>
+      <p>I am used to working with agile methodologies such as <strong>Scrum</strong> and <strong>Extreme Programming (XP)</strong>.</p>
       <p>Right now, I'm digging into <strong>Rust</strong> and <strong>Clojure</strong>, and I'm curious about <strong>Zig</strong> too.</p>
     </div>
   </div>

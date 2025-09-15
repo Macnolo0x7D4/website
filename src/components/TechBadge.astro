@@ -1,13 +1,9 @@
 ---
-const { name, image, invert } = Astro.props;
+const { name, devicon, color } = Astro.props;
 ---
 
 <div class="group flex flex-col items-center justify-center gap-y-2 p-3 sm:p-4 bg-mantle rounded-md w-20 h-20 sm:w-24 sm:h-24 mx-auto transition-all duration-300 hover:scale-105 hover:bg-mantle/80 hover:shadow-lg hover:shadow-blue/20 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue focus:ring-blue/50" tabindex="0">
-  <img
-    src={`/images/tech/${image}`}
-    alt={name}
-    class={`w-8 h-8 sm:w-10 sm:h-10 transition-transform duration-300 group-hover:scale-110 ${invert ? 'invert' : ''}`}
-  />
+  <i class={`${devicon} text-2xl sm:text-3xl transition-transform duration-300 group-hover:scale-110`} style={`color: ${color}`}></i>
   <span class="text-xs sm:text-sm text-center text-gray-200 transition-colors duration-300 group-hover:text-white">{name}</span>
 </div>
 
