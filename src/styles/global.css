@@ -1,42 +1,42 @@
 @import "tailwindcss";
 
 @theme {
-  --default-font-family: 'Jetbrains Mono', monospace;
-  --color-base: #1e1e2e;
-  --color-blue: #89b4fa;
-  --color-sky: #89dceb;
-  --color-green: #a6e3a1;
-  --color-mauve: #cba6f7;
-  --color-red: #f38ba8;
-  --color-yellow: #f9e2af;
-  --color-rosewater: #f5e0dc;
-  --color-mantle: #181825;
+  --default-font-family: 'JetBrains Mono', monospace;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-bg: #0d1117;
+  --color-surface: #161b22;
+  --color-border: #30363d;
+  --color-text: #e6edf3;
+  --color-muted: #7d8590;
+  --color-accent: #58a6ff;
+  --color-accent-subtle: #1f6feb;
 }
 
 h2 {
-  @apply text-2xl font-bold text-green;
+  @apply text-2xl font-bold text-text font-sans;
 }
 
 h3 {
-  @apply text-xl text-mauve mt-2 mb-3;
+  @apply text-xl text-text mt-2 mb-3 font-sans;
 }
 
 strong {
-  @apply font-bold text-white;
+  @apply font-bold text-text;
 }
 
 li, p {
-  @apply text-gray-300 pb-3 leading-relaxed;
+  @apply text-muted pb-3 leading-relaxed;
 }
 
 /* Enhanced paragraph styling for better readability */
 p {
-  @apply text-gray-200 leading-7 mb-4 max-w-none;
+  @apply text-text leading-7 mb-4 max-w-none;
 }
 
 /* Improved spacing and readability for content sections */
 .content-section p {
-  @apply text-gray-200 leading-7 mb-5 text-base;
+  @apply text-text leading-7 mb-5 text-base;
 }
 
 .content-section p:last-child {
@@ -57,7 +57,7 @@ p {
 
 /* Enhanced focus styles */
 .focus-ring {
-  @apply focus:outline-none focus:ring-2 focus:ring-blue/50 focus:ring-offset-2 focus:ring-offset-base;
+  @apply focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2 focus:ring-offset-bg;
 }
 
 /* Smooth transitions for interactive elements */
@@ -67,9 +67,9 @@ p {
 
 /* Button hover effects */
 .btn-primary {
-  @apply bg-blue text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-medium transition-all duration-300 hover:bg-blue/90 hover:scale-105 hover:shadow-lg hover:shadow-blue/25 focus:outline-none focus:ring-2 focus:ring-blue/50 focus:ring-offset-2 focus:ring-offset-base text-sm sm:text-base;
+  @apply bg-accent text-bg px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-medium font-sans transition-all duration-300 hover:bg-accent-subtle hover:scale-105 hover:shadow-lg hover:shadow-accent/25 focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2 focus:ring-offset-bg text-sm sm:text-base;
 }
 
 .btn-secondary {
-  @apply bg-green border-2 border-green text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-medium transition-all duration-300 hover:bg-green hover:text-black hover:scale-105 hover:shadow-lg hover:shadow-green/25 focus:outline-none focus:ring-2 focus:ring-green/50 focus:ring-offset-2 focus:ring-offset-base text-sm sm:text-base;
+  @apply border border-border text-text px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-medium font-sans transition-all duration-300 hover:border-accent hover:text-accent hover:scale-105 focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2 focus:ring-offset-bg text-sm sm:text-base;
 }

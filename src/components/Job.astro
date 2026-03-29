@@ -5,7 +5,7 @@ const { title, timeline, summary } = Astro.props;
 <li class="leading-relaxed">
   <div class="flex items-center justify-between gap-x-2 mb-1">
     <h3 class="text-lg font-semibold">{title}</h3>
-    <p class="text-sm text-zinc-700 dark:text-zinc-400">{timeline}</p>
+    <p class="text-sm text-muted">{timeline}</p>
   </div>
-  <p class="text-sm text-zinc-700 dark:text-zinc-400">{summary}</p>
+  <p class="text-sm text-muted">{summary}</p>
 </li>

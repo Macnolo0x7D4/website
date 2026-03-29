@@ -17,10 +17,10 @@ const links = [
 ]
 ---
 
-<header class="w-full py-2 bg-base/95 backdrop-blur-sm sticky top-0 z-50 border-b border-mantle">
+<header class="w-full py-2 bg-bg/95 backdrop-blur-sm sticky top-0 z-50 border-b border-border">
   <nav class="max-w-4xl mx-auto flex justify-between items-center gap-4 px-4">
     <div class="flex items-center">
-      <p class="text-lg font-bold text-gray-100 hover:text-white transition-colors duration-300 !m-0 !p-0 !leading-tight">Manuel Díaz</p>
+      <p class="text-lg font-bold font-sans text-text hover:text-accent transition-colors duration-300 !m-0 !p-0 !leading-tight">Manuel Díaz</p>
     </div>
 
     <div class="hidden md:flex grow justify-center items-center">
@@ -30,8 +30,8 @@ const links = [
     </div>
 
     <div class="flex items-center gap-4">
-      <a href="#contact" class="hidden md:block text-green hover:text-white transition-colors duration-300 font-medium">Contact me</a>
-      <button id="mobile-menu-button" class="md:hidden text-gray-100 p-2 hover:text-white hover:bg-mantle rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue focus:ring-blue/50" aria-label="Toggle menu">
+      <a href="#contact" class="hidden md:block font-sans text-accent hover:text-accent-subtle transition-colors duration-300 font-medium">Contact me</a>
+      <button id="mobile-menu-button" class="md:hidden text-text p-2 hover:text-accent hover:bg-surface rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-accent/50" aria-label="Toggle menu">
         <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
         </svg>
@@ -43,17 +43,17 @@ const links = [
   </nav>
 </header>
 
-<div id="mobile-menu" class="md:hidden fixed top-16 left-0 right-0 bg-base/95 backdrop-blur-sm border-b border-mantle transform -translate-y-full opacity-0 transition-all duration-300 ease-out z-40">
+<div id="mobile-menu" class="md:hidden fixed top-16 left-0 right-0 bg-bg/95 backdrop-blur-sm border-b border-border transform -translate-y-full opacity-0 transition-all duration-300 ease-out z-40">
   <div class="px-4 py-6 space-y-4">
     {links.map((l) => (
       <div class="block">
-        <a href={l.url} class="block px-4 py-3 text-gray-300 hover:text-white hover:bg-mantle rounded-lg transition-all duration-300 mobile-menu-link">
+        <a href={l.url} class="block px-4 py-3 font-sans text-muted hover:text-accent hover:bg-surface rounded-lg transition-all duration-300 mobile-menu-link">
           {l.name}
         </a>
       </div>
     ))}
     <div class="block">
-      <a href="#contact" class="block px-4 py-3 text-green hover:text-white hover:bg-mantle rounded-lg transition-all duration-300 mobile-menu-link">
+      <a href="#contact" class="block px-4 py-3 font-sans text-accent hover:text-accent-subtle hover:bg-surface rounded-lg transition-all duration-300 mobile-menu-link">
         Contact me
       </a>
     </div>
@@ -71,7 +71,7 @@ const links = [
 
   function toggleMenu() {
     isMenuOpen = !isMenuOpen;
-    
+
     if (isMenuOpen) {
       mobileMenu?.classList.remove('-translate-y-full', 'opacity-0');
       mobileMenu?.classList.add('translate-y-0', 'opacity-100');
@@ -114,4 +114,3 @@ const links = [
     }
   });
 </script>
-
