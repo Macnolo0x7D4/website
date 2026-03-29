@@ -2,7 +2,7 @@
 
 @theme {
   --default-font-family: 'JetBrains Mono', monospace;
-  --font-sans: 'Inter', sans-serif;
+  --font-sans: 'Noto Sans', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   --color-bg: #0d1117;
   --color-surface: #161b22;
@@ -26,17 +26,12 @@ strong {
 }
 
 li, p {
-  @apply text-muted pb-3 leading-relaxed;
-}
-
-/* Enhanced paragraph styling for better readability */
-p {
-  @apply text-text leading-7 mb-4 max-w-none;
+  @apply text-muted pb-3 leading-relaxed font-light;
 }
 
 /* Improved spacing and readability for content sections */
 .content-section p {
-  @apply text-text leading-7 mb-5 text-base;
+  @apply text-muted leading-7 mb-5 text-base font-light;
 }
 
 .content-section p:last-child {
